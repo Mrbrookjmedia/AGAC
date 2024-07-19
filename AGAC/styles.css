@@ -1,0 +1,398 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f9f9f9;
+}
+
+/* Header Styles */
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-info {
+    text-align: right;
+    line-height: 1.5;
+}
+
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+/* Hero Section */
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* About Us Section */
+.about-us {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.about-us h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #007BFF; /* Matching design color */
+}
+
+.importance {
+    margin: 20px 0;
+}
+
+.importance h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #007BFF; /* Matching design color */
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Matching design color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: #0056b3; /* Darker shade for hover */
+}
+
+.text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #007BFF; /* Matching design color */
+}
+
+.text p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.text button {
+    padding: 10px 20px;
+    background-color: #007BFF; /* Matching design color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.text button:hover {
+    background-color: #0056b3; /* Darker shade for hover */
+}
+
+.points ul {
+    list-style-type: disc;
+    text-align: left;
+    display: inline-block;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.importance-images {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.importance-images img {
+    margin: 0 10px;
+    width: 200px;
+    height: auto;
+}
+
+/* Introduction Section */
+.introduction {
+    padding: 40px 20px;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.introduction h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #007BFF; /* Matching design color */
+}
+
+.introduction p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+/* Goals Section */
+.goals {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.goals h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #007BFF; /* Matching design color */
+}
+
+.goal-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.goal {
+    width: 300px;
+    margin: 20px;
+    text-align: left;
+}
+
+.goal h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #007BFF; /* Matching design color */
+}
+
+.goal p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.goal button {
+    padding: 10px 20px;
+    background-color: #007BFF; /* Matching design color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.goal button:hover {
+    background-color: #0056b3; /* Darker shade for hover */
+}
+
+/* Timeline Section */
+.timeline {
+    padding: 40px 20px;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.timeline h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #007BFF; /* Matching design color */
+}
+
+.timeline-events {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.event {
+    width: 200px;
+    margin: 20px;
+    text-align: left;
+}
+
+.event h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #007BFF; /* Matching design color */
+}
+
+.event p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Team Section */
+.team {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.team h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #007BFF; /* Matching design color */
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.member {
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+}
+
+.member img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.member h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #007BFF; /* Matching design color */
+}
+
+.member p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.member button {
+    padding: 10px 20px;
+    background-color: #007BFF; /* Matching design color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.member button:hover {
+    background-color: #0056b3; /* Darker shade for hover */
+}
+
+/* Parent Company Section */
+.parent-company {
+    padding: 40px 20px;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.parent-company h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #007BFF; /* Matching design color */
+}
+
+.parent-company p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.parent-company button {
+    padding: 10px 20px;
+    background-color: #007BFF; /* Matching design color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.parent-company button:hover {
+    background-color: #0056b3; /* Darker shade for hover */
+}
+
+/* Footer Styles */
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #555;
+}
+
+.footer-top .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer-top .contact-info {
+    text-align: left;
+}
+
+.footer-top .contact-info ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-top .contact-info ul li {
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+}
+
+.footer-bottom a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
