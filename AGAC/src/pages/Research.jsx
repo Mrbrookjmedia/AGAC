@@ -311,7 +311,7 @@ function Research() {
                 AGAC's research facilities. Explore specific labs through these
                 detailed videos:
               </p>
-              <ul style={{ listStyleType: "disc", paddingLeft: "20px", color: "rgb(59, 130, 246) " }}>
+              <ul style={{ listStyleType: "disc", paddingLeft: "20px", color: "rgb(59, 130, 246) ",textAlign:"start" }}>
                 {" "}
                 {/* Ensure list has bullets */}
                 <li><a href="#">Genomics Lab Video</a></li>
@@ -483,13 +483,13 @@ function Research() {
           <div className="text-black font-bold text-2xl my-4 p-1">
             <h2> Data Analytics Technique </h2>
           </div>
-          <div className="cur-cards">
+          <div className="data-cards"style={{display:"flex"}}>
             <div
-              className="cur-cards-1"
-              style={{ height: "310px", width: "250px", overflow: "hidden" }}
+              className="data-cards-1"
+              style={{ height: "320px", width: "280px", overflow: "hidden" }}
             >
-              <img src={Res8} alt="" />
-              <h2 style={{ padding: "10px" }}>Descriptive Analytics</h2>
+              <img src={Res8} alt="" style={{height :"200px",width:"290px"}} />
+              <h2 style={{ padding: "10px"}}>Descriptive Analytics</h2>
 
               <p>
                 Summarizes and interprets historical data to understand past
@@ -498,8 +498,8 @@ function Research() {
               </p>
             </div>
             <div
-              className="cur-cards-1"
-              style={{ height: "310px", width: "250px", overflow: "hidden" }}
+              className="data-cards-1"
+              style={{ height: "320px", width: "250px", overflow: "hidden" }}
             >
               <img src={Res9} alt="" />
               <h2 style={{ padding: "10px" }}>Predictive Analytics</h2>
@@ -511,8 +511,8 @@ function Research() {
               </p>
             </div>
             <div
-              className="cur-cards-1"
-              style={{ height: "310px", width: "250px", overflow: "hidden" }}
+              className="data-cards-1"
+              style={{ height: "320px", width: "250px", overflow: "hidden" }}
             >
               <img src={Res10} alt="" />
               <h2
