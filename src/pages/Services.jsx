@@ -48,17 +48,20 @@ const Services = () => {
         <header className="header">
           <div className="col-md-12">
           <div className="gradient-background flex items-center justify-center font-semibold">
-        <h1 className="text-2xl text-white">Services</h1>
+       
       </div>
+     
             <img src={img1} alt="Services1" />
           </div>
+          <h1 className="text-2xl text-white bg-lime-400 my-0">Services</h1>
+          
         </header>
         <section className="aquaculture-section">
           <div className="image">
             <img src={img2} alt="Services2" />
           </div>
           <div className="content">
-            <h2 className="whatwedo">What We Do</h2>
+            <h2 className="whatwedo ">What We Do</h2>
             <h3>Aquaculture Solutions</h3>
 
             <div className="services">
@@ -161,7 +164,7 @@ const Services = () => {
                   adjustments based on genetic predispositions and health
                   conditions.
                 </p>
-                <a href="#" className="btn btn-primary text-white">
+                <a href="#" className="btn btn-primary text-white ">
                   Read More
                 </a>
               </div>
@@ -185,7 +188,7 @@ const Services = () => {
         </div>
         <div className="row mt-0">
           <div className="col-md-10">
-            <div className="bg-success text-center p-3">
+            <div className="bg-success rounded-2xl text-center p-3">
               <h1 className="text-light">Aquaponics Market Leaders</h1>
               <h2 className="text-l">
                 We're popular in aquaponics market globally
