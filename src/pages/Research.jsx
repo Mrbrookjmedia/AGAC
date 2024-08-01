@@ -274,224 +274,137 @@ function Research() {
   </div>
 </div>
 
+<div className="bg-customGreen flex items-center justify-center font-semibold">
+  <h1 className="text-2xl text-white">Data and Analytics</h1>
+</div>
 
-        <div className="bg-customGreen flex items-center justify-center font-semibold">
-          <h1 className="text-2xl text-white">Data and Analytics</h1>
+<div className="flex flex-col items-center justify-center px-4 md:px-10 my-10">
+  {/* Data Collection */}
+  <div className="text-black font-bold text-2xl my-4 p-1 text-center md:text-left">
+    Data Collection
+  </div>
+
+  <div className="mt-3 font-medium text-customBlackText leading-7 text-lg mb-10 w-full md:w-3/4">
+    AGAC collects a wide range of data essential for our innovative research in aquaponics and genomic agriculture. This includes genetic data from fish and plants, environmental parameters such as water quality and temperature, and metrics on the health and growth of aquatic species and crops. Our data collection methods are designed to ensure accuracy and comprehensiveness, utilizing advanced sensors, IoT devices, and automated lab instruments.
+  </div>
+
+  <div className="flex flex-col items-center md:flex-row md:justify-center gap-8">
+    <div className="flex flex-col items-center text-center md:text-left">
+      <div className="legend mb-4">
+        <LegendItem colorClass="color-genetic" label="Genetic Data" />
+        <LegendItem colorClass="color-environmental" label="Environmental Data" />
+        <LegendItem colorClass="color-health" label="Health Metrics" />
+      </div>
+      <img src={Res6} alt="" className="w-full max-w-xs" />
+    </div>
+  </div>
+
+  {/* AI Algorithms */}
+  <div className="text-black font-bold text-2xl my-4 p-1 text-center md:text-left">
+    AI Algorithms
+  </div>
+
+  <div className="mt-3 font-medium text-customBlackText leading-7 text-lg mb-10 w-full md:w-3/4">
+    Artificial intelligence is a cornerstone of AGAC's data analysis approach. We use machine learning models, deep learning neural networks, and predictive analytics to process and interpret our data. These AI techniques help us uncover patterns and make predictions that guide our research in optimizing aquaculture practices, enhancing genetic traits, and personalizing nutrition plans.
+  </div>
+
+  <div className="flex flex-col items-center md:flex-row md:justify-center gap-8">
+    <img src={Res7} alt="" className="w-full md:w-2/3 max-w-4xl" />
+    <div className="flex flex-col items-center text-center md:text-left">
+      <div className="legend-2 mb-4">
+        <div className="legend-item flex items-center">
+          <div className="legend-color predictive mr-2"></div>
+          <div className="legend-label">Predictive AI</div>
         </div>
-
-        <div className="flex flex-col items-center justify-center">
-          <div className="text-black font-bold text-2xl my-4 p-1">
-            Data Collection
-          </div>
-
-          <div className="mt-3 font-medium text-customBlackText leading-9 text-lg mb-10 w-3/4">
-            AGAC collects a wide range of data essential for our innovative
-            research in aquaponics and genomic agriculture. This includes
-            genetic data from fish and plants, environmental parameters such as
-            water quality and temperature, and metrics on the health and growth
-            of aquatic species and crops. Our data collection methods are
-            designed to ensure accuracy and comprehensiveness, utilizing
-            advanced sensors, IoT devices, and automated lab instruments.
-          </div>
-
-          <div className="research-pie">
-            <div className="legend">
-              <LegendItem colorClass="color-genetic" label="Genetic Data" />
-              <LegendItem
-                colorClass="color-environmental"
-                label="Environmental Data"
-              />
-              <LegendItem colorClass="color-health" label="Health Metrics" />
-            </div>
-            <img
-              src={Res6}
-              alt=""
-              style={{ width: "350px", height: "270px" }}
-            />
-          </div>
-          <div className="text-black font-bold text-2xl my-4 p-1">
-            AI Algorithms{" "}
-          </div>
-
-          <div className="mt-3 font-medium text-customBlackText leading-9 text-lg mb-10 w-3/4">
-            Artificial intelligence is a cornerstone of AGAC's data analysis
-            approach. We use machine learning models, deep learning neural
-            networks, and predictive analytics to process and interpret our
-            data. These AI techniques help us uncover patterns and make
-            predictions that guide our research in optimizing aquaculture
-            practices, enhancing genetic traits, and personalizing nutrition
-            plans.
-          </div>
-
-          <div className="bar-chart-container">
-            <img src={Res7} alt="" style={{ width: "70vw", height: "40vw" }} />
-            <div className="legend-2">
-              <div className="legend-item">
-                <div className="legend-color predictive"></div>
-                <div className="legend-label">Predictive AI</div>
-              </div>
-              <div className="legend-item">
-                <div className="legend-color analytical"></div>
-                <div className="legend-label">Analytical AI</div>
-              </div>
-              <div className="legend-item">
-                <div className="legend-color diagnostic"></div>
-                <div className="legend-label">Diagnostic AI</div>
-              </div>
-            </div>
-          </div>
-          <div className="text-black font-bold text-2xl my-4 p-1">
-            Analytics Capabilties
-          </div>
-
-          <div className="mt-3 font-medium text-customBlackText leading-9 text-lg mb-10 w-3/4">
-            Explore how AGAC leverages advanced analytics to extract meaningful
-            insights from collected data, enhancing decision-making and research
-            outcomes.
-          </div>
-          {/* more content to add */}
-
-          <div className="text-black font-bold text-2xl my-4 p-1">
-            <h2> Data Analytics Technique </h2>
-          </div>
-          <div className="data-cards"style={{display:"flex"}}>
-            <div
-              className="data-cards-1"
-              style={{ height: "320px", width: "280px", overflow: "hidden" }}
-            >
-              <img src={Res8} alt="" style={{height :"200px",width:"290px"}} />
-              <h2 style={{ padding: "10px"}}>Descriptive Analytics</h2>
-
-              <p>
-                Summarizes and interprets historical data to understand past
-                events. Tools include dashboards, reporting tools, and data
-                visualization software like Tableau and Power BI.
-              </p>
-            </div>
-            <div
-              className="data-cards-1"
-              style={{ height: "320px", width: "250px", overflow: "hidden" }}
-            >
-              <img src={Res9} alt="" />
-              <h2 style={{ padding: "10px" }}>Predictive Analytics</h2>
-
-              <p>
-                Forecasts future trends and outcomes based on historical data
-                using machine learning algorithms such as regression analysis
-                and neural networks.
-              </p>
-            </div>
-            <div
-              className="data-cards-1"
-              style={{ height: "320px", width: "250px", overflow: "hidden" }}
-            >
-              <img src={Res10} alt="" />
-              <h2
-                style={{
-                  padding: "10px",
-                  display: "flex",
-                  alignItems: "center",
-                  textAlign: "center",
-                }}
-              >
-                Prescriptive Analytics
-              </h2>
-
-              <p>
-                Recommends actions based on data analysis through optimization
-                algorithms, decision analysis, and simulation modeling.
-              </p>
-            </div>
-          </div>
-
-          <div className="text-black font-bold text-2xl my-4 p-1">
-            {" "}
-            Capabilties
-          </div>
-
-          <div className="flex items-center justify-center px-10 mb-10 my-10">
-            <img
-              src={research19}
-              width="300"
-              alt="Research"
-              style={{ marginLeft: "9rem" }}
-            />
-
-            {/* Content Container */}
-            <div className="flex flex-col items-center">
-              {/* Title */}
-              <span className="bg-green-500 text-white font-medium my-2 p-2 mb-6 rounded w-1/2 text-center">
-                Real-time monitoring
-              </span>
-
-              <div className="mt-2 w-1/2 text-customBlackText leading-5 text-sm  ">
-                AGAC continuously collects data from various sensors and IoT
-                devices to monitor environmental conditions, fish health, and
-                system performance in real-time. This enables prompt detection
-                of anomalies and immediate response to potential issues.
-                Advanced algorithms analyze incoming data streams to provide
-                actionable insights. This ensures optimal conditions for both
-                aquaponics systems and research environments.
-              </div>
-            </div>
-          </div>
-
-          <div className="flex items-center justify-center px-10 mb-10 my-10">
-            <img
-              src={research20}
-              width="300"
-              alt="Research"
-              style={{ marginLeft: "9rem" }}
-            />
-
-            {/* Content Container */}
-            <div className="flex flex-col items-center">
-              {/* Title */}
-              <span className="bg-green-500 text-white font-medium my-2 p-2 rounded mb-6 w-1/2 text-center">
-                Big data Integration
-              </span>
-
-              <div className="mt-2 w-1/2 text-customBlackText leading-5 text-sm  ">
-                AGAC integrates vast amounts of structured and unstructured data
-                from multiple sources, including sensor data, research
-                publications, and historical records. Utilizing technologies
-                like Hadoop and Spark, AGAC efficiently processes and analyzes
-                this data. This holistic approach enhances research accuracy and
-                innovation. The seamless integration supports comprehensive
-                data-driven decision-making.
-              </div>
-            </div>
-          </div>
-
-          <div className="flex items-center justify-center px-10 mb-10 my-10">
-            <img
-              src={research21}
-              width="300"
-              alt="Research"
-              style={{ marginLeft: "9rem" }}
-            />
-
-            {/* Content Container */}
-            <div className="flex flex-col items-center">
-              {/* Title */}
-              <span className="bg-green-500 text-white font-medium my-2 mb-6 p-2 rounded w-1/2 text-center">
-                Data Visualization{" "}
-              </span>
-
-              <div className="mt-2 w-1/2 text-customBlackText leading-5 text-sm ">
-                AGAC uses cutting-edge tools like Tableau and Power BI to create
-                interactive and intuitive visualizations. These visualizations
-                transform complex datasets into easily understandable formats,
-                such as graphs and charts. This aids researchers and
-                stakeholders in identifying patterns and trends quickly. It
-                facilitates informed decision-making and strategic planning.
-              </div>
-            </div>
-          </div>
+        <div className="legend-item flex items-center">
+          <div className="legend-color analytical mr-2"></div>
+          <div className="legend-label">Analytical AI</div>
+        </div>
+        <div className="legend-item flex items-center">
+          <div className="legend-color diagnostic mr-2"></div>
+          <div className="legend-label">Diagnostic AI</div>
         </div>
       </div>
-    </>
-  );
+    </div>
+  </div>
+
+  {/* Analytics Capabilities */}
+  <div className="text-black font-bold text-2xl my-4 p-1 text-center md:text-left">
+    Analytics Capabilities
+  </div>
+
+  <div className="mt-3 font-medium text-customBlackText leading-7 text-lg mb-10 w-full md:w-3/4">
+    Explore how AGAC leverages advanced analytics to extract meaningful insights from collected data, enhancing decision-making and research outcomes.
+  </div>
+
+  {/* Data Analytics Technique */}
+  <div className="text-black font-bold text-2xl my-4 p-1 text-center md:text-left">
+    Data Analytics Technique
+  </div>
+
+  <div className="flex flex-col md:flex-row flex-wrap gap-8 justify-center">
+    <div className="data-cards-1 flex flex-col items-center p-4 bg-white rounded shadow-md w-full md:w-80">
+      <img src={Res8} alt="" className="h-40 w-full object-cover mb-4" />
+      <h2 className="text-lg font-semibold mb-2 text-center">Descriptive Analytics</h2>
+      <p className="text-sm text-center">
+        Summarizes and interprets historical data to understand past events. Tools include dashboards, reporting tools, and data visualization software like Tableau and Power BI.
+      </p>
+    </div>
+    <div className="data-cards-1 flex flex-col items-center p-4 bg-white rounded shadow-md w-full md:w-80">
+      <img src={Res9} alt="" className="h-40 w-full object-cover mb-4" />
+      <h2 className="text-lg font-semibold mb-2 text-center">Predictive Analytics</h2>
+      <p className="text-sm text-center">
+        Forecasts future trends and outcomes based on historical data using machine learning algorithms such as regression analysis and neural networks.
+      </p>
+    </div>
+    <div className="data-cards-1 flex flex-col items-center p-4 bg-white rounded shadow-md w-full md:w-80">
+      <img src={Res10} alt="" className="h-40 w-full object-cover mb-4" />
+      <h2 className="text-lg font-semibold mb-2 text-center">Prescriptive Analytics</h2>
+      <p className="text-sm text-center">
+        Recommends actions based on data analysis through optimization algorithms, decision analysis, and simulation modeling.
+      </p>
+    </div>
+  </div>
+
+  {/* Capabilities */}
+  <div className="text-black font-bold text-2xl my-4 p-1 text-center md:text-left">
+    Capabilities
+  </div>
+
+  <div className="flex flex-col md:flex-row flex-wrap gap-8 justify-center">
+    <div className="flex flex-col items-center md:items-start p-4 bg-white rounded shadow-md w-full md:w-80">
+      <img src={research19} alt="Research" className="w-full max-w-xs mb-4" />
+      <span className="bg-green-500 text-white font-medium my-2 p-2 rounded w-full text-center">
+        Real-time monitoring
+      </span>
+      <div className="mt-2 text-customBlackText leading-5 text-sm text-center md:text-left">
+        AGAC continuously collects data from various sensors and IoT devices to monitor environmental conditions, fish health, and system performance in real-time. This enables prompt detection of anomalies and immediate response to potential issues. Advanced algorithms analyze incoming data streams to provide actionable insights. This ensures optimal conditions for both aquaponics systems and research environments.
+      </div>
+    </div>
+    <div className="flex flex-col items-center md:items-start p-4 bg-white rounded shadow-md w-full md:w-80">
+      <img src={research20} alt="Research" className="w-full max-w-xs mb-4" />
+      <span className="bg-green-500 text-white font-medium my-2 p-2 rounded w-full text-center">
+        Big data Integration
+      </span>
+      <div className="mt-2 text-customBlackText leading-5 text-sm text-center md:text-left">
+        AGAC integrates vast amounts of structured and unstructured data from multiple sources, including sensor data, research publications, and historical records. Utilizing technologies like Hadoop and Spark, AGAC efficiently processes and analyzes this data. This holistic approach enhances research accuracy and innovation. The seamless integration supports comprehensive data-driven decision-making.
+      </div>
+    </div>
+    <div className="flex flex-col items-center md:items-start p-4 bg-white rounded shadow-md w-full md:w-80">
+      <img src={research21} alt="Research" className="w-full max-w-xs mb-4" />
+      <span className="bg-green-500 text-white font-medium my-2 p-2 rounded w-full text-center">
+        Data Visualization
+      </span>
+      <div className="mt-2 text-customBlackText leading-5 text-sm text-center md:text-left">
+        AGAC uses cutting-edge tools like Tableau and Power BI to create interactive and intuitive visualizations. These visualizations transform complex datasets into easily understandable formats, such as graphs and charts. This aids researchers and stakeholders in identifying patterns and trends quickly. It facilitates informed decision-making and strategic planning.
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</>
+
+);
 }
 
 export default Research;
