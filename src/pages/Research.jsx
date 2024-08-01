@@ -200,135 +200,74 @@ function Research() {
 </div>
 
 
-        <div className="bg-customGreen flex items-center justify-center font-semibold">
-          <h1 className="text-2xl text-white">Virtual Lab Tours</h1>
-        </div>
-        <div>
-          <div
-            className="mt-12 font-bold w-1/2   text-customBlackText leading-9 text-xl mb-10"
-            style={{ marginLeft: "21rem" }}
-          >
-            Explore AGAC’s cutting-edge research facilities from the comfort of
-            your own home with our interactive virtual lab tours.
-          </div>
-          <div>
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                justifyContent: "center",
-                height: "70vh",
-                textAlign: "center",
-                fontWeight: "bold",
-                color: "rgb(135, 134, 128)",
-                width: "50vw",
-                margin: "0 auto",
-                gap: "20px"
-              }}
-            >
-              <img
-                src={Res11}
-                alt=""
-                style={{ height: "20vw", width: "50vw" }}
-              />
-              <p>
-                Watch our Introduction Video for a comprehensive overview of
-                AGAC's research facilities. Explore specific labs through these
-                detailed videos:
-              </p>
-              <ul style={{ listStyleType: "disc", paddingLeft: "20px", color: "rgb(59, 130, 246) ",textAlign:"start" }}>
-                {" "}
-                {/* Ensure list has bullets */}
-                <li><a href="#">Genomics Lab Video</a></li>
-                <li><a href="#">AI and Data Analytics Center Video</a></li>
-                <li><a href="#">Aquaculture Research Facility Video</a></li>
-              </ul>
-            </div>
-          </div>
-          {/* more code here to complete this section */}
-        </div>
+<div className="bg-customGreen flex items-center justify-center font-semibold py-4">
+  <h1 className="text-2xl text-white">Virtual Lab Tours</h1>
+</div>
 
-        <div className="bg-customGreen flex items-center justify-center font-semibold">
-          <h1 className="text-2xl text-white">Publications</h1>
-        </div>
+<div className="py-10 px-4">
+  <div className="text-customBlackText leading-9 text-xl font-bold mb-10 max-w-3xl mx-auto text-center md:text-left">
+    Explore AGAC’s cutting-edge research facilities from the comfort of your own home with our interactive virtual lab tours.
+  </div>
+  
+  <div className="flex flex-col items-center justify-center text-center gap-4 md:flex-row md:gap-8">
+    <img
+      src={Res11}
+      alt="Virtual Lab Tours"
+      className="w-full md:w-1/2 h-auto max-w-md"
+    />
+    <div className="flex flex-col items-center md:items-start text-gray-700">
+      <p className="font-bold mb-4">
+        Watch our Introduction Video for a comprehensive overview of AGAC's research facilities. Explore specific labs through these detailed videos:
+      </p>
+      <ul className="list-disc list-inside pl-5 text-blue-600 text-left">
+        <li><a href="#">Genomics Lab Video</a></li>
+        <li><a href="#">AI and Data Analytics Center Video</a></li>
+        <li><a href="#">Aquaculture Research Facility Video</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
 
-        <div className="bg-customPinkbg flex-col justify-center py-12 ">
-          <div className="cur-cards-0 px-96">
-            <span className="font-bold w-1/2 text-customBlackText leading-9 text-lg mb-10">
-              Access to research papers, articles, and findings published by
-              AGAC researchers. AGAC regularly publishes its research findings
-              in leading scientific journals, ensuring transparency and
-              collaboration within the scientific community. Explore our{" "}
-              <a href="#" className="text-blue-500">
-                research papers and articles
-              </a>{" "}
-              for in-depth insights. Here are a few of our recent publications:
-            </span>
-          </div>
-          <div className="cur-cards">
-            <div
-              className="cur-cards-1"
-              style={{ height: "450px", width: "320px" }}
-            >
-              <img src={Res3} alt="" />
-              <h2 style={{ padding: "10px" }}>
-                Genetic Engineering for Cancer Treatment
-              </h2>
+<div className="bg-customGreen flex items-center justify-center font-semibold py-4">
+  <h1 className="text-2xl text-white">Publications</h1>
+</div>
 
-              <p>
-                Revolutionizing cancer treatment with cutting-edge genetic
-                engineering, harnessing the power of AI to target and eradicate
-                cancer cells with precision. Our innovative approach offers hope
-                for a cure by reprogramming genes to fight the disease from
-                within. Join us in the quest to transform lives and defeat
-                cancer.
-              </p>
-            </div>
-            <div
-              className="cur-cards-1"
-              style={{ height: "450px", width: "320px" }}
-            >
-              <img src={Res4} alt="" />
-              <h2 style={{ padding: "10px" }}>
-                AI-driven precision nutrition systems
-              </h2>
+<div className="bg-customPinkbg py-12 px-4">
+  <div className="cur-cards-0 max-w-3xl mx-auto mb-10 text-center md:text-left">
+    <span className="font-bold text-customBlackText leading-9 text-lg">
+      Access to research papers, articles, and findings published by AGAC researchers. AGAC regularly publishes its research findings in leading scientific journals, ensuring transparency and collaboration within the scientific community. Explore our{" "}
+      <a href="#" className="text-blue-500">research papers and articles</a>{" "}
+      for in-depth insights. Here are a few of our recent publications:
+    </span>
+  </div>
+  
+  <div className="flex flex-col md:flex-row flex-wrap justify-center gap-8">
+    <div className="cur-cards-1 bg-white border border-green-500 rounded-lg p-4 text-center w-full max-w-sm">
+      <img src={Res3} alt="Publication 1" className="mb-4" />
+      <h2 className="text-lg font-bold mb-2">Genetic Engineering for Cancer Treatment</h2>
+      <p>
+        Revolutionizing cancer treatment with cutting-edge genetic engineering, harnessing the power of AI to target and eradicate cancer cells with precision. Our innovative approach offers hope for a cure by reprogramming genes to fight the disease from within. Join us in the quest to transform lives and defeat cancer.
+      </p>
+    </div>
+    
+    <div className="cur-cards-1 bg-white border border-green-500 rounded-lg p-4 text-center w-full max-w-sm">
+      <img src={Res4} alt="Publication 2" className="mb-4" />
+      <h2 className="text-lg font-bold mb-2">AI-driven Precision Nutrition Systems</h2>
+      <p>
+        Unlock the future of personalized health with AI-driven precision nutrition systems. By analyzing genetic and health data, we create tailored nutrition plans that optimize individual well-being. Embrace a new era of nutrition science that adapts to your unique genetic makeup for maximum health benefits.
+      </p>
+    </div>
+    
+    <div className="cur-cards-1 bg-white border border-green-500 rounded-lg p-4 text-center w-full max-w-sm">
+      <img src={Res5} alt="Publication 3" className="mb-4" />
+      <h2 className="text-lg font-bold mb-2">Advanced Techniques in Sustainable Aquaculture</h2>
+      <p>
+        Lead the way in sustainable food production with advanced aquaculture techniques. Our innovative methods enhance fish farming efficiency and environmental stewardship. Join us in revolutionizing aquaculture to ensure a sustainable and nutritious food source for the future.
+      </p>
+    </div>
+  </div>
+</div>
 
-              <p>
-                Unlock the future of personalized health with AI-driven
-                precision nutrition systems. By analyzing genetic and health
-                data, we create tailored nutrition plans that optimize
-                individual well-being. Embrace a new era of nutrition science
-                that adapts to your unique genetic makeup for maximum health
-                benefits.
-              </p>
-            </div>
-            <div
-              className="cur-cards-1"
-              style={{ height: "450px", width: "320px" }}
-            >
-              <img src={Res5} alt="" />
-              <h2
-                style={{
-                  padding: "10px",
-                  display: "flex",
-                  alignItems: "center",
-                  textAlign: "center",
-                }}
-              >
-                Advanced techniques in sustainable aquaculture
-              </h2>
-
-              <p>
-                Lead the way in sustainable food production with advanced
-                aquaculture techniques. Our innovative methods enhance fish
-                farming efficiency and environmental stewardship. Join us in
-                revolutionizing aquaculture to ensure a sustainable and
-                nutritious food source for the future.
-              </p>
-            </div>
-          </div>
-        </div>
 
         <div className="bg-customGreen flex items-center justify-center font-semibold">
           <h1 className="text-2xl text-white">Data and Analytics</h1>
