@@ -52,8 +52,8 @@ const Services = () => {
       </div>
      
             <img src={img1} alt="Services1" />
+            <h1 className="text-2xl text-white bg-lime-400 my-0 pt-0">Services</h1>
           </div>
-          <h1 className="text-2xl text-white bg-lime-400 my-0">Services</h1>
           
         </header>
         <section className="aquaculture-section">

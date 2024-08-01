@@ -9,6 +9,10 @@ body {
   margin-bottom: 1rem;
 }
 
+.gradient-background{
+  background: linear-gradient(to right, #4BAF47 0%, #1F491E 100%);
+}
+
 .header img {
   width: 100%;
   height: auto; 
