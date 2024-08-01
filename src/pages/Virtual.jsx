@@ -23,14 +23,16 @@ import forums3 from '../../images/forums3.png';
 const Virtual = () => {
   return (
     <div>
+    <div className="overflow-x-hidden"> {/* Prevent horizontal overflow */}
       <header className="relative">
         <div className="bg-cover bg-center h-64" style={{ backgroundImage: `url(${event1})`, backgroundPosition: 'center top' }}>
           {/* This div is the header image */}
         </div>
       </header>
-      <div className="gradient-background flex items-center justify-center font-semibold">
+      
+        <div className="gradient-background flex items-center justify-center font-semibold">
           <h1 className="text-2xl text-white">Advanced Features and Virtual Tools</h1>
-        </div>
+        </div>   
       
 
       <section className="py-8">
@@ -67,7 +69,7 @@ const Virtual = () => {
             It ensures data integrity and facilitates collaboration, allowing researchers to share and analyze data efficiently.
           </p>
           <div className="flex flex-col md:flex-row items-center mb-8">
-            <div className="md:w-1/2">
+            <div className="md:w-1/2 hidden md:block">
               <img src={genomic} alt="Genomic Data" className="w-180 h-96 ml-10 rounded-md mt-4"/>
             </div>
             <div className="md:w-1/2 md:pl-8 mt-4 md:mt-0">
@@ -157,47 +159,48 @@ const Virtual = () => {
         </div>
       </section>
       <section id="learning-modules" className="text-center mt-12 py-8">
-          <h3 className="text-3xl font-extrabold mb-6">Online Learning Modules</h3>
-          <p className="text-center mb-8 mt-4 text-lg text-gray-500 font-bold">
-          Explore comprehensive e-learning courses on AI in agriculture, genetic research, and specialized topics. Enhance your knowledge with interactive and in-depth modules designed by experts. <br/> Accessible anytime, anywhere for flexible learning.
-          </p>
+  <h3 className="text-3xl font-extrabold mb-6">Online Learning Modules</h3>
+  <p className="text-center mb-8 mt-4 text-lg text-gray-500 font-bold">
+    Explore comprehensive e-learning courses on AI in agriculture, genetic research, and specialized topics. Enhance your knowledge with interactive and in-depth modules designed by experts. <br /> Accessible anytime, anywhere for flexible learning.
+  </p>
 
-          <div className="flex flex-col items-center space-y-8">
-          
-            <div className="flex items-center w-full max-w-4xl">
-              <img src={learning1} alt="Media Kit 1" className="w-72 h-72 rounded-full object-cover object-left mr-4 border border-black"/> {/* Increased dimensions */}
-              <div className="text-left">
-              <h1 className="font-extrabold text-black text-3xl text-center mb-4"> AI in Agriculture</h1>
-                <p className="text-gray-500 mb-2 text-md ml-6 text-left"> Learn how AI can optimize crop yield and reduce waste through predictive analytics and machine learning algorithms. Understand the integration of drone technology in farming to monitor crop health and manage fields efficiently. Explore the use of AI in developing smart irrigation systems that conserve water and maximize crop output.</p>
-                <button className="bg-green-600 mt-2 text-white px-5 py-1 rounded hover:bg-green-700 ml-6"> Enroll Now</button>
-              </div>
-            </div>
-            
-            <div className="flex items-center w-full max-w-4xl">
-              <img src={learning2} alt="Media Kit 2" className="w-72 h-72 rounded-full object-cover mr-4 border border-black"/> {/* Increased dimensions */}
-              <div className="text-left">
-              <h1 className="font-extrabold text-black text-3xl text-center mb-4"> Genetic Research </h1>
-                <p className="text-gray-500 mb-2 text-md ml-6 text-left">Understand the basics and applications of CRISPR technology in agriculture to create disease-resistant and high-yield crops. Dive into the world of bioinformatics and learn how to analyze genetic data for agricultural advancements. Explore the principles of plant genetics and breeding techniques to develop improved crop varieties.</p>
-                <button className="bg-green-600 mt-2 text-white px-5 py-1 rounded hover:bg-green-700 ml-6"> Enroll Now</button>
-              </div>
-            </div>
-          
-            <div className="flex items-center w-full max-w-4xl">
-              <img src={learning3} alt="Media Kit 3" className="w-72 h-72 rounded-full object-cover mr-4 border border-black"/> {/* Increased dimensions */}
-              <div className="text-left">
-              <h1 className="font-extrabold text-black text-3xl text-center mb-4">Sustainable Farming Techniques </h1>
-                <p className="text-gray-500 mb-2 text-md ml-8 text-left">Study the principles of organic farming and how to implement sustainable practices on your farm. Learn the fundamentals of permaculture and how to design agricultural systems that are sustainable and self-sufficient. Understand the importance of soil health and learn techniques for maintaining and improving soil quality.</p>
-                <button className="bg-green-600 mt-2 text-white px-5 py-1 rounded hover:bg-green-700 ml-8"> Enroll Now</button>
-              </div>
-            </div>
-            
-          
-           </div>
-          </section>
+  <div className="flex flex-col items-center space-y-8">
+    {/* Learning Module 1 */}
+    <div className="flex flex-col sm:flex-row items-center w-full max-w-4xl">
+      <img src={learning1} alt="AI in Agriculture" className="w-72 h-72 rounded-full object-cover object-left mr-4 border border-black hidden sm:block"/> {/* Hidden on small screens */}
+      <div className="text-left">
+        <h1 className="font-extrabold text-black text-3xl mb-4 ml-6">AI in Agriculture</h1>
+        <p className="text-gray-500 mb-2 text-md ml-6">Learn how AI can optimize crop yield and reduce waste through predictive analytics and machine learning algorithms. Understand the integration of drone technology in farming to monitor crop health and manage fields efficiently. Explore the use of AI in developing smart irrigation systems that conserve water and maximize crop output.</p>
+        <button className="bg-green-600 mt-2 text-white px-5 py-1 rounded hover:bg-green-700 ml-6">Enroll Now</button>
+      </div>
+    </div>
+    
+    {/* Learning Module 2 */}
+    <div className="flex flex-col sm:flex-row items-center w-full max-w-4xl">
+      <img src={learning2} alt="Genetic Research" className="w-72 h-72 rounded-full object-cover mr-4 border border-black hidden sm:block"/> {/* Hidden on small screens */}
+      <div className="text-left">
+        <h1 className="font-extrabold text-black text-3xl mb-4 ml-6">Genetic Research</h1>
+        <p className="text-gray-500 mb-2 text-md ml-6">Understand the basics and applications of CRISPR technology in agriculture to create disease-resistant and high-yield crops. Dive into the world of bioinformatics and learn how to analyze genetic data for agricultural advancements. Explore the principles of plant genetics and breeding techniques to develop improved crop varieties.</p>
+        <button className="bg-green-600 mt-2 text-white px-5 py-1 rounded hover:bg-green-700 ml-6">Enroll Now</button>
+      </div>
+    </div>
+    
+    {/* Learning Module 3 */}
+    <div className="flex flex-col sm:flex-row items-center w-full max-w-4xl">
+      <img src={learning3} alt="Sustainable Farming Techniques" className="w-72 h-72 rounded-full object-cover mr-4 border border-black hidden sm:block"/> {/* Hidden on small screens */}
+      <div className="text-left">
+        <h1 className="font-extrabold text-black text-3xl mb-4 ml-6">Sustainable Farming Techniques</h1>
+        <p className="text-gray-500 mb-2 text-md ml-6">Study the principles of organic farming and how to implement sustainable practices on your farm. Learn the fundamentals of permaculture and how to design agricultural systems that are sustainable and self-sufficient. Understand the importance of soil health and learn techniques for maintaining and improving soil quality.</p>
+        <button className="bg-green-600 mt-2 text-white px-5 py-1 rounded hover:bg-green-700 ml-6">Enroll Now</button>
+      </div>
+    </div>
+  </div>
+</section>
+
           <section id="media-contacts" className="text-center mt-12">
   <h3 className="text-3xl font-extrabold mb-6">Meet our Instructors</h3>
   
-  <div className="flex flex-wrap justify-center gap-32">
+  <div className="flex flex-wrap justify-center gap-28">
     {/* Primary Contact */}
     <div className="max-w-sm bg-white rounded-lg shadow-md overflow-hidden border border-green-600 p-0 mt-10 h-[380px] w-[320px] flex flex-col">
       <div className= "text-black text-center p-4">
@@ -233,65 +236,72 @@ const Virtual = () => {
   </div>
 </section>
 <section id="press-releases" className="text-center mt-12">
-          <h3 className="text-3xl font-extrabold mb-6">Resource Libarary</h3>
-          <p className="text-center mb-10 mt-6 text-lg text-gray-500 font-bold"> Access a wealth of knowledge with our comprehensive Resource Library. Dive deep into research papers, case studies, and technical documents that cover a wide range of topics in AI in agriculture, <br/> genetic research, and sustainable farming techniques.</p>
-          <div className="flex flex-wrap justify-center gap-16">
-            {/* Row 1 */}
-            <div className="flex justify-center w-full gap-40">
-              {/* Press Release 1 */}
-              <div className="max-w-sm bg-white rounded-lg shadow-md overflow-hidden h-[470px] w-[300px] border border-green-600">
-                <img src={resource1} alt="Press Release 1" className="w-full h-52 object-cover"/>
-                <div className="p-4">
-                  <div className="text-black font-extrabold mb-2">Research Papers</div>
-                  
-                  <p className = "text-sm text-left">Stay updated with the latest research in AI in agriculture, genetic engineering, and sustainable farming practices. Our library includes peer-reviewed papers from leading journals and conferences, providing you with credible and up-to-date information.</p>
-                  <button className="bg-green-600 text-white px-6 py-2 rounded mt-6 hover:bg-green-700 ">Access</button>
-                </div>
-              </div>
-              {/* Press Release 2 */}
-              <div className="max-w-sm bg-white rounded-lg shadow-md overflow-hidden h-[470px] w-[300px] border border-green-600">
-                <img src={resource2} alt="Press Release 2" className="w-full h-52 mt-2 object-cover"/>
-                <div className="p-4">
-                  <div className="text-black font-extrabold mb-2">Case Studies</div>
-                  <p className = "text-sm text-left">Explore detailed case studies that illustrate the practical application of AI, genetic research, and sustainable farming techniques. These case studies highlight successful projects and innovations from around the world.</p>
-                  
-                  
-                  <button className="bg-green-600 text-white px-6 py-2 rounded mt-9 hover:bg-green-700">Access</button>
-                </div>
-              </div>
-              {/* Press Release 3 */}
-              <div className="max-w-sm bg-white rounded-lg shadow-md overflow-hidden h-[470px] w-[300px] border border-green-600 mb-6">
-                <img src={resource3} alt="Press Release 3" className="w-full h-52 object-cover"/>
-                <div className="p-4">
-                  <div className="text-black font-extrabold mb-2">Technical Documents</div>
-                  <p className = "text-sm text-left">Gain a deeper understanding of the technical aspects of AI, genetic research, and sustainable farming. Our technical documents include user manuals, technical guides, and white papers that offer detailed explanations and practical tips.</p>
-                  
-                  <button className="bg-green-600 text-white px-6 py-2 rounded mt-6 hover:bg-green-700">Access</button>
-                </div>
-              </div>
-            </div>
-            </div>
-            </section>
-            <section id="live-chat text-center mt-12"> 
-            <h3 className="text-3xl font-extrabold mb-6 text-center mt-6">Live-Chat Support </h3>
-            <p className="text-center mb-10 mt-6 text-lg text-gray-500 font-bold">Our Live Chat Support provides real-time assistance to help you navigate the site and utilize its features effectively. Whether you have technical questions, need help with course enrollment,<br/> or require guidance on using our resources, our support team is here to assist you.</p>
-            <h3 className="text-2xl font-extrabold mb-6 text-center mt-6">Real-Time Assistance </h3>
-            <p className="text-center mb-10 mt-6 text-lg text-gray-500 font-bold">Get immediate help with any issues or questions you have while using the platform.</p>
-            </section>
-            <section className="py-8">
-        <div className="container mx-auto px-4 bg-gray-100">
-          <div className="flex justify-center">
-          <div className="relative"></div>
-            <img src={livechat} alt="Live Chat Support" className=" w-auto h-auto rounded-md mt-1"/>
-          </div>
-        </div>
-      </section>
+  <h3 className="text-3xl font-extrabold mb-6">Resource Library</h3>
+  <p className="text-center mb-10 mt-6 text-lg text-gray-500 font-bold">
+    Access a wealth of knowledge with our comprehensive Resource Library. Dive deep into research papers, case studies, and technical documents that cover a wide range of topics in AI in agriculture, <br /> genetic research, and sustainable farming techniques.
+  </p>
+  <div className="flex flex-wrap justify-center gap-8 md:gap-12 lg:gap-36">
+    {/* Row 1 */}
+    {/* Press Release 1 */}
+    <div className="w-full md:w-[300px] max-w-sm bg-white rounded-lg shadow-md overflow-hidden border border-green-600 mb-8 md:mb-0">
+      <img src={resource1} alt="Research Papers" className="w-full h-52 object-cover hidden sm:block"/> {/* Hide on small screens */}
+      <div className="p-4">
+        <div className="text-black font-extrabold mb-2">Research Papers</div>
+        <p className="text-sm text-left">Stay updated with the latest research in AI in agriculture, genetic engineering, and sustainable farming practices. Our library includes peer-reviewed papers from leading journals and conferences, providing you with credible and up-to-date information.</p>
+        <button className="bg-green-600 text-white px-6 py-2 rounded mt-6 hover:bg-green-700">Access</button>
+      </div>
+    </div>
+
+    {/* Press Release 2 */}
+    <div className="w-full md:w-[300px] max-w-sm bg-white rounded-lg shadow-md overflow-hidden border border-green-600 mb-8 md:mb-0">
+      <img src={resource2} alt="Case Studies" className="w-full h-52 object-cover hidden sm:block"/> {/* Hide on small screens */}
+      <div className="p-4">
+        <div className="text-black font-extrabold mb-2">Case Studies</div>
+        <p className="text-sm text-left">Explore detailed case studies that illustrate the practical application of AI, genetic research, and sustainable farming techniques. These case studies highlight successful projects and innovations from around the world.</p>
+        <button className="bg-green-600 text-white px-6 py-2 rounded mt-12 hover:bg-green-700">Access</button>
+      </div>
+    </div>
+
+    {/* Press Release 3 */}
+    <div className="w-full md:w-[300px] max-w-sm bg-white rounded-lg shadow-md overflow-hidden border border-green-600">
+      <img src={resource3} alt="Technical Documents" className="w-full h-52 object-cover hidden sm:block"/> {/* Hide on small screens */}
+      <div className="p-4">
+        <div className="text-black font-extrabold mb-2">Technical Documents</div>
+        <p className="text-sm text-left">Gain a deeper understanding of the technical aspects of AI, genetic research, and sustainable farming. Our technical documents include user manuals, technical guides, and white papers that offer detailed explanations and practical tips.</p>
+        <button className="bg-green-600 text-white px-6 py-2 rounded mt-6 hover:bg-green-700">Access</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="live-chat" className="text-center mt-12">
+  <h3 className="text-3xl font-extrabold mb-6">Live-Chat Support</h3>
+  <p className="text-center mb-10 mt-6 text-lg text-gray-500 font-bold">
+    Our Live Chat Support provides real-time assistance to help you navigate the site and utilize its features effectively. Whether you have technical questions, need help with course enrollment,<br/> or require guidance on using our resources, our support team is here to assist you.
+  </p>
+  <h3 className="text-2xl font-extrabold mb-6">Real-Time Assistance</h3>
+  <p className="text-center mb-10 mt-6 text-lg text-gray-500 font-bold">
+    Get immediate help with any issues or questions you have while using the platform.
+  </p>
+</section>
+
+<section className="py-8">
+  <div className="container mx-auto px-4">
+    <div className="flex justify-center">
+      <div className="relative bg-gray-100 p-4 rounded-md">
+        <img src={livechat} alt="Live Chat Support" className="w-full max-w-3xl h-auto rounded-md"/>
+      </div>
+    </div>
+  </div>
+</section>
+
       <section className="py-8 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-4 text-center mt-2">Technical Support</h2>
           
           <div className="flex flex-col md:flex-row items-center mb-8">
-            <div className="md:w-1/2">
+            <div className="md:w-1/2 hidden md:block">
               <img src={techsupport} alt="Genomic Data" className="w-[600px] h-96 ml-10 rounded-md mt-12"/>
             </div>
             <div className="md:w-1/2 md:pl-8 mt-4 md:mt-0">
@@ -321,7 +331,7 @@ const Virtual = () => {
 
             
           
-
+</div>
 
     </div>
   );
