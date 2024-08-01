@@ -46,86 +46,92 @@ function Research() {
         </div>
 
         {/* Main Title */}
-        <h1 className="text-center text-2xl my-4 font-semibold">
-          Research Areas
-        </h1>
+<h1 className="text-center text-2xl my-4 font-semibold">
+  Research Areas
+</h1>
 
-        <div className="flex items-center justify-center px-10 mb-10 my-10">
-          <img
-            src={research2}
-            width="300"
-            alt="Research"
-            style={{ marginLeft: "9rem" }}
-          />
+<div className="space-y-10 px-4 md:px-10 my-10">
+  {/* Research Area 1 */}
+  <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+    <img
+      src={research2}
+      alt="Research"
+      className="w-full md:w-1/3 max-w-xs mx-auto"
+    />
 
-          {/* Content Container */}
-          <div className="flex flex-col items-center">
-            {/* Title */}
-            <span className="bg-green-500 text-white font-medium my-2 p-2 rounded w-1/2 text-center">
-              Genetic Disease Treatment
-            </span>
+    {/* Content Container */}
+    <div className="flex flex-col items-center md:items-start text-center md:text-left">
+      {/* Title */}
+      <span className="bg-green-500 text-white font-medium my-2 p-2 rounded w-full md:w-1/2 text-center">
+        Genetic Disease Treatment
+      </span>
 
-            <div className="mt-2 w-1/2 text-customBlackText leading-7 text-center">
-              AGAC focuses on using genetic engineering and AI to develop
-              innovative treatments for diseases such as cancer, sickle cell
-              anemia, and hypertension. By analyzing genetic data and
-              identifying key biomarkers, AGAC aims to create targeted therapies
-              that improve patient outcomes.
-            </div>
-          </div>
-        </div>
-        <div class="border-t-2 border-gray-300 my-4"></div>
+      {/* Text Content */}
+      <div className="mt-2 text-customBlackText leading-7 text-center md:text-left">
+        AGAC focuses on using genetic engineering and AI to develop
+        innovative treatments for diseases such as cancer, sickle cell
+        anemia, and hypertension. By analyzing genetic data and
+        identifying key biomarkers, AGAC aims to create targeted therapies
+        that improve patient outcomes.
+      </div>
+    </div>
+  </div>
 
-        <div className="flex items-center justify-center px-10 mb-10 my-10">
-          <img
-            src={research3}
-            width="300"
-            alt="Research"
-            style={{ marginLeft: "9rem" }}
-          />
+  <div className="border-t-2 border-gray-300 my-4"></div>
 
-          {/* Content Container */}
-          <div className="flex flex-col items-center">
-            {/* Title */}
-            <span className="bg-green-500 text-white font-medium my-2 p-2 rounded w-1/2 text-center">
-              Precision Nutrition
-            </span>
+  {/* Research Area 2 */}
+  <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+    <img
+      src={research3}
+      alt="Research"
+      className="w-full md:w-1/3 max-w-xs mx-auto"
+    />
 
-            {/* Text Content */}
-            <div className="mt-2 w-1/2 text-customBlackText leading-7 text-center">
-              The Precision Nutrition System™ explores the relationship between
-              genetics, diet, and health. AGAC develops personalized nutrition
-              plans based on genetic and health data, optimizing individual
-              health outcomes and preventing chronic diseases.
-            </div>
-          </div>
-        </div>
-        <div class="border-t-2 border-gray-300 my-4"></div>
+    {/* Content Container */}
+    <div className="flex flex-col items-center md:items-start text-center md:text-left">
+      {/* Title */}
+      <span className="bg-green-500 text-white font-medium my-2 p-2 rounded w-full md:w-1/2 text-center">
+        Precision Nutrition
+      </span>
 
-        <div className="flex items-center justify-center px-10 mb-10 my-10">
-          <img
-            src={research4}
-            width="300"
-            alt="Research"
-            style={{ marginLeft: "9rem" }}
-          />
+      {/* Text Content */}
+      <div className="mt-2 text-customBlackText leading-7 text-center md:text-left">
+        The Precision Nutrition System™ explores the relationship between
+        genetics, diet, and health. AGAC develops personalized nutrition
+        plans based on genetic and health data, optimizing individual
+        health outcomes and preventing chronic diseases.
+      </div>
+    </div>
+  </div>
 
-          {/* Content Container */}
-          <div className="flex flex-col items-center">
-            {/* Title */}
-            <span className="bg-green-500 text-white font-medium my-2 p-2 rounded w-1/2 text-center">
-              Aquaculture Techniques
-            </span>
+  <div className="border-t-2 border-gray-300 my-4"></div>
 
-            {/* Text Content */}
-            <div className="mt-2 w-1/2 text-customBlackText leading-7 text-center">
-              AGAC pioneers advanced aquaculture techniques to enhance food
-              production and sustainability. By optimizing breeding, rearing,
-              and harvesting processes, AGAC aims to create a reliable and
-              efficient food supply that supports global food security.
-            </div>
-          </div>
-        </div>
+  {/* Research Area 3 */}
+  <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+    <img
+      src={research4}
+      alt="Research"
+      className="w-full md:w-1/3 max-w-xs mx-auto"
+    />
+
+    {/* Content Container */}
+    <div className="flex flex-col items-center md:items-start text-center md:text-left">
+      {/* Title */}
+      <span className="bg-green-500 text-white font-medium my-2 p-2 rounded w-full md:w-1/2 text-center">
+        Aquaculture Techniques
+      </span>
+
+      {/* Text Content */}
+      <div className="mt-2 text-customBlackText leading-7 text-center md:text-left">
+        AGAC pioneers advanced aquaculture techniques to enhance food
+        production and sustainability. By optimizing breeding, rearing,
+        and harvesting processes, AGAC aims to create a reliable and
+        efficient food supply that supports global food security.
+      </div>
+    </div>
+  </div>
+</div>
+
 
         <div className="bg-customGreen flex items-center justify-center font-semibold py-4">
   <h1 className="text-2xl text-white">Ongoing Projects</h1>
