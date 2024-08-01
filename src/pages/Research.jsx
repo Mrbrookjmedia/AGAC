@@ -46,9 +46,9 @@ function Research() {
         </div>
 
         {/* Main Title */}
-        <h1 className="text-center text-2xl my-4 font-semibold">
-          Research Areas
-        </h1>
+<h1 className="text-center text-2xl my-4 font-semibold">
+  Research Areas
+</h1>
 
         <div className="flex flex-col items-center justify-center mb-10 my-10 px-4">
           <div className="flex flex-col md:flex-row items-center justify-center">
