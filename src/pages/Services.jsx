@@ -53,7 +53,9 @@ const Services = () => {
      
             <img src={img1} alt="Services1" />
           </div>
-          <h1 className="text-2xl text-white bg-lime-400 my-0">Services</h1>
+          <div className="gradient-background flex items-center justify-center font-semibold">
+          <h1 className="text-2xl text-white">Services</h1>
+        </div>
           
         </header>
         <section className="aquaculture-section">
