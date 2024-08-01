@@ -52,10 +52,12 @@ const Services = () => {
       </div>
      
             <img src={img1} alt="Services1" />
-          </div>
+           </div>
+
           <div className="gradient-background flex items-center justify-center font-semibold">
           <h1 className="text-2xl text-white">Services</h1>
         </div>
+
           
         </header>
         <section className="aquaculture-section">
