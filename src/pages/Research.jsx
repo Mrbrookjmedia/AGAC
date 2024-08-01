@@ -50,159 +50,169 @@ function Research() {
           Research Areas
         </h1>
 
-        <div className="flex items-center justify-center px-10 mb-10 my-10">
-          <img
-            src={research2}
-            width="300"
-            alt="Research"
-            style={{ marginLeft: "9rem" }}
-          />
+        <div className="flex flex-col items-center justify-center mb-10 my-10 px-4">
+          <div className="flex flex-col md:flex-row items-center justify-center">
+            <img
+              src={research2}
+              alt="Research"
+              className="w-48 h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 mb-4 md:mb-0 md:mr-16"
+            />
 
-          {/* Content Container */}
-          <div className="flex flex-col items-center">
-            {/* Title */}
-            <span className="bg-green-500 text-white font-medium my-2 p-2 rounded w-1/2 text-center">
-              Genetic Disease Treatment
-            </span>
+            {/* Content Container */}
+            <div className="flex flex-col items-center md:items-start text-center md:text-left">
+              {/* Title */}
+              <span className="bg-green-500 text-white font-medium my-2 p-2 rounded w-full md:w-auto text-center">
+                Genetic Disease Treatment
+              </span>
 
-            <div className="mt-2 w-1/2 text-customBlackText leading-7 text-center">
-              AGAC focuses on using genetic engineering and AI to develop
-              innovative treatments for diseases such as cancer, sickle cell
-              anemia, and hypertension. By analyzing genetic data and
-              identifying key biomarkers, AGAC aims to create targeted therapies
-              that improve patient outcomes.
+              {/* Text Content */}
+              <div className="mt-2 w-full md:w-auto lg:w-96 text-customBlackText leading-7">
+                AGAC focuses on using genetic engineering and AI to develop innovative
+                treatments for diseases such as cancer, sickle cell anemia, and
+                hypertension. By analyzing genetic data and identifying key biomarkers,
+                AGAC aims to create targeted therapies that improve patient outcomes.
+              </div>
             </div>
           </div>
         </div>
-        <div class="border-t-2 border-gray-300 my-4"></div>
 
-        <div className="flex items-center justify-center px-10 mb-10 my-10">
-          <img
-            src={research3}
-            width="300"
-            alt="Research"
-            style={{ marginLeft: "9rem" }}
-          />
 
-          {/* Content Container */}
-          <div className="flex flex-col items-center">
-            {/* Title */}
-            <span className="bg-green-500 text-white font-medium my-2 p-2 rounded w-1/2 text-center">
-              Precision Nutrition
-            </span>
 
-            {/* Text Content */}
-            <div className="mt-2 w-1/2 text-customBlackText leading-7 text-center">
-              The Precision Nutrition System™ explores the relationship between
-              genetics, diet, and health. AGAC develops personalized nutrition
-              plans based on genetic and health data, optimizing individual
-              health outcomes and preventing chronic diseases.
+        <div className="border-t-2 border-gray-300 my-4"></div>
+
+        <div className="flex flex-col items-center justify-center px-4 mb-10 my-10">
+          <div className="flex flex-col md:flex-row items-center justify-center">
+            <img
+              src={research3}
+              alt="Research"
+              className="w-60 h-60 md:w-56 md:h-56 lg:w-64 lg:h-64 mb-4 md:mb-0 md:mr-20"
+            />
+
+            {/* Content Container */}
+            <div className="flex flex-col items-center md:items-start text-center md:text-left">
+              {/* Title */}
+              <span className="bg-green-500 text-white font-medium my-2 p-2 rounded w-full md:w-auto text-center">
+                Precision Nutrition
+              </span>
+
+              {/* Text Content */}
+              <div className="mt-2 w-full md:w-auto lg:w-96 text-customBlackText leading-7">
+                The Precision Nutrition System™ explores the relationship between
+                genetics, diet, and health. AGAC develops personalized nutrition plans
+                based on genetic and health data, optimizing individual health outcomes
+                and preventing chronic diseases.
+              </div>
             </div>
           </div>
         </div>
-        <div class="border-t-2 border-gray-300 my-4"></div>
 
-        <div className="flex items-center justify-center px-10 mb-10 my-10">
-          <img
-            src={research4}
-            width="300"
-            alt="Research"
-            style={{ marginLeft: "9rem" }}
-          />
+        <div className="border-t-2 border-gray-300 my-4"></div>
 
-          {/* Content Container */}
-          <div className="flex flex-col items-center">
-            {/* Title */}
-            <span className="bg-green-500 text-white font-medium my-2 p-2 rounded w-1/2 text-center">
-              Aquaculture Techniques
-            </span>
+        <div className="flex flex-col items-center justify-center px-4 mb-10 my-10">
+          <div className="flex flex-col md:flex-row items-center justify-center">
+            <img
+              src={research4}
+              alt="Research"
+              className="w-60 h-60 md:w-56 md:h-56 lg:w-64 lg:h-64 mb-4 md:mb-0 md:mr-20"
+            />
 
-            {/* Text Content */}
-            <div className="mt-2 w-1/2 text-customBlackText leading-7 text-center">
-              AGAC pioneers advanced aquaculture techniques to enhance food
-              production and sustainability. By optimizing breeding, rearing,
-              and harvesting processes, AGAC aims to create a reliable and
-              efficient food supply that supports global food security.
+            {/* Content Container */}
+            <div className="flex flex-col items-center md:items-start text-center md:text-left">
+              {/* Title */}
+              <span className="bg-green-500 text-white font-medium my-2 p-2 rounded w-full md:w-auto text-center">
+                Aquaculture Techniques
+              </span>
+
+              {/* Text Content */}
+              <div className="mt-2 w-full md:w-auto lg:w-96 text-customBlackText leading-7">
+                AGAC pioneers advanced aquaculture techniques to enhance food
+                production and sustainability. By optimizing breeding, rearing, and
+                harvesting processes, AGAC aims to create a reliable and efficient food
+                supply that supports global food security.
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div className="bg-customGreen flex items-center justify-center font-semibold py-4">
+          <h1 className="text-2xl text-white">Ongoing Projects</h1>
+        </div>
+
+        <div className="bg-customPinkbg py-10">
+          <div className="flex flex-wrap justify-center gap-6">
+            <div className="cur-cards-1 w-full max-w-sm bg-white border border-green-500 rounded-lg p-4 text-center flex flex-col items-center">
+              <img src={Res1} alt="AI-driven Fish Farming" className="mb-4" />
+              <button className="mb-2 px-4 py-2 bg-green-500 text-white rounded">AI-driven Fish Farming</button>
+              <p>
+                This project uses AI to optimize fish farming practices, increasing yield and sustainability. By monitoring environmental conditions and fish behavior, AGAC develops algorithms that improve feeding, health management, and resource utilization.
+              </p>
+            </div>
+            <div className="cur-cards-1 w-full max-w-sm bg-white border border-green-500 rounded-lg p-4 text-center flex flex-col items-center">
+              <img src={Res2} alt="Genetic Enhancement of Aquatic Species" className="mb-4" />
+              <button className="mb-2 px-4 py-2 bg-green-500 text-white rounded">Genetic Enhancement of Aquatic Species</button>
+              <p>
+                AGAC researches genetic modifications to enhance aquatic species' resistance to diseases and improve their nutritional value. This project aims to create more resilient and nutritious food sources, contributing to better health outcomes.
+              </p>
             </div>
           </div>
         </div>
 
         <div className="bg-customGreen flex items-center justify-center font-semibold py-4">
-  <h1 className="text-2xl text-white">Ongoing Projects</h1>
-</div>
+          <h1 className="text-2xl text-white">Research Facilities</h1>
+        </div>
 
-<div className="bg-customPinkbg py-10">
-  <div className="flex flex-wrap justify-center gap-6">
-    <div className="cur-cards-1 w-full max-w-sm bg-white border border-green-500 rounded-lg p-4 text-center flex flex-col items-center">
-      <img src={Res1} alt="AI-driven Fish Farming" className="mb-4" />
-      <button className="mb-2 px-4 py-2 bg-green-500 text-white rounded">AI-driven Fish Farming</button>
-      <p>
-        This project uses AI to optimize fish farming practices, increasing yield and sustainability. By monitoring environmental conditions and fish behavior, AGAC develops algorithms that improve feeding, health management, and resource utilization.
-      </p>
-    </div>
-    <div className="cur-cards-1 w-full max-w-sm bg-white border border-green-500 rounded-lg p-4 text-center flex flex-col items-center">
-      <img src={Res2} alt="Genetic Enhancement of Aquatic Species" className="mb-4" />
-      <button className="mb-2 px-4 py-2 bg-green-500 text-white rounded">Genetic Enhancement of Aquatic Species</button>
-      <p>
-        AGAC researches genetic modifications to enhance aquatic species' resistance to diseases and improve their nutritional value. This project aims to create more resilient and nutritious food sources, contributing to better health outcomes.
-      </p>
-    </div>
-  </div>
-</div>
+        <div className="py-10 px-4">
+          <div className="mb-10 text-customBlackText leading-7 text-lg font-medium max-w-2xl mx-auto">
+            The Aquatech Genomic Agriculture Center (AGAC) is equipped with state-of-the-art research facilities designed to support groundbreaking research in genetic engineering, precision nutrition, and advanced aquaculture techniques. Our laboratories are outfitted with cutting-edge equipment and technologies that enable our scientists to conduct high-level research and innovation.
+          </div>
 
-<div className="bg-customGreen flex items-center justify-center font-semibold py-4">
-  <h1 className="text-2xl text-white">Research Facilities</h1>
-</div>
+          <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+            <img src={research7} alt="Research Facility 1" className="w-full md:w-1/2 max-w-sm mb-6 md:mb-0" />
+            <div className="flex flex-col items-center text-center md:text-left md:w-1/2">
+              <span className="text-black font-bold text-xl md:text-2xl mb-2">Genomics Lab</span>
+              <div className="mt-2 text-customGreen2 leading-7 text-sm font-medium">
+                The Genomics Lab at AGAC pioneers genetic research using advanced sequencing and analysis technologies.
+              </div>
+              <div className="text-customBlackText leading-7 text-sm font-light mt-2">
+                Located within AGAC, our Genomics Lab houses state-of-the-art next-generation sequencing machines and bioinformatics tools. Here, researchers explore genetic disease treatments and enhance aquatic species through precision genetic engineering. This facility fosters collaboration among geneticists, bioinformaticians, and molecular biologists, aiming to revolutionize health and agriculture through cutting-edge genomic research.
+              </div>
+            </div>
+          </div>
 
-<div className="py-10 px-4">
-  <div className="mb-10 text-customBlackText leading-7 text-lg font-medium max-w-2xl mx-auto">
-    The Aquatech Genomic Agriculture Center (AGAC) is equipped with state-of-the-art research facilities designed to support groundbreaking research in genetic engineering, precision nutrition, and advanced aquaculture techniques. Our laboratories are outfitted with cutting-edge equipment and technologies that enable our scientists to conduct high-level research and innovation.
-  </div>
+          <div className="flex flex-col md:flex-row items-center justify-center gap-8 mt-10">
+            <img src={research8} alt="Research Facility 2" className="w-full md:w-1/2 max-w-sm mb-6 md:mb-0" />
+            <div className="flex flex-col items-center text-center md:text-left md:w-1/2">
+              <span className="text-black font-bold text-xl md:text-2xl mb-2">AI and Data Analytics Center</span>
+              <div className="mt-2 text-customGreen2 leading-7 text-sm font-medium">
+                The AI and Data Analytics Center at AGAC leverages powerful computing resources and sophisticated software for cutting-edge research.
+              </div>
+              <div className="text-customBlackText leading-7 text-sm font-light mt-2">
+                AGAC's AI and Data Analytics Center is equipped with high-performance computing clusters and advanced data analytics software. Researchers here develop AI algorithms to optimize fish farming practices and precision nutrition. The center supports extensive data collection and analysis, enhancing decision-making and innovation. This facility fosters interdisciplinary collaboration, driving advancements in AI-driven solutions for sustainable agriculture and health.
+              </div>
+            </div>
+          </div>
 
-  <div className="flex flex-col md:flex-row items-center justify-center gap-8">
-    <img src={research7} alt="Research Facility 1" className="w-full md:w-1/2 max-w-sm mb-6 md:mb-0" />
-    <div className="flex flex-col items-center text-center md:text-left md:w-1/2">
-      <span className="text-black font-bold text-xl md:text-2xl mb-2">Genomics Lab</span>
-      <div className="mt-2 text-customGreen2 leading-7 text-sm font-medium">
-        The Genomics Lab at AGAC pioneers genetic research using advanced sequencing and analysis technologies.
-      </div>
-      <div className="text-customBlackText leading-7 text-sm font-light mt-2">
-        Located within AGAC, our Genomics Lab houses state-of-the-art next-generation sequencing machines and bioinformatics tools. Here, researchers explore genetic disease treatments and enhance aquatic species through precision genetic engineering. This facility fosters collaboration among geneticists, bioinformaticians, and molecular biologists, aiming to revolutionize health and agriculture through cutting-edge genomic research.
-      </div>
-    </div>
-  </div>
-
-  <div className="flex flex-col md:flex-row items-center justify-center gap-8 mt-10">
-    <img src={research8} alt="Research Facility 2" className="w-full md:w-1/2 max-w-sm mb-6 md:mb-0" />
-    <div className="flex flex-col items-center text-center md:text-left md:w-1/2">
-      <span className="text-black font-bold text-xl md:text-2xl mb-2">AI and Data Analytics Center</span>
-      <div className="mt-2 text-customGreen2 leading-7 text-sm font-medium">
-        The AI and Data Analytics Center at AGAC leverages powerful computing resources and sophisticated software for cutting-edge research.
-      </div>
-      <div className="text-customBlackText leading-7 text-sm font-light mt-2">
-        AGAC's AI and Data Analytics Center is equipped with high-performance computing clusters and advanced data analytics software. Researchers here develop AI algorithms to optimize fish farming practices and precision nutrition. The center supports extensive data collection and analysis, enhancing decision-making and innovation. This facility fosters interdisciplinary collaboration, driving advancements in AI-driven solutions for sustainable agriculture and health.
-      </div>
-    </div>
-  </div>
-
-  <div className="flex flex-col md:flex-row items-center justify-center gap-8 mt-10">
-    <img src={research9} alt="Research Facility 3" className="w-full md:w-1/2 max-w-sm mb-6 md:mb-0" />
-    <div className="flex flex-col items-center text-center md:text-left md:w-1/2">
-      <span className="text-black font-bold text-xl md:text-2xl mb-2">Aquaculture Research Facility</span>
-      <div className="mt-2 text-customGreen2 leading-7 text-sm font-medium">
-        The Aquaculture Research Facility at AGAC pioneers advanced techniques to enhance sustainable food production.
-      </div>
-      <div className="text-customBlackText leading-7 text-sm font-light mt-2">
-        AGAC's Aquaculture Research Facility features modern fish tanks, water quality monitoring systems, and innovative aquaponics setups. Researchers optimize breeding, rearing, and harvesting processes to improve yield and sustainability. This facility enables comprehensive studies on disease resistance and nutritional enhancement of aquatic species. By integrating cutting-edge technology, the facility supports AGAC's mission to ensure global food security through sustainable aquaculture practices.
-      </div>
-    </div>
-  </div>
-</div>
+          <div className="flex flex-col md:flex-row items-center justify-center gap-8 mt-10">
+            <img src={research9} alt="Research Facility 3" className="w-full md:w-1/2 max-w-sm mb-6 md:mb-0" />
+            <div className="flex flex-col items-center text-center md:text-left md:w-1/2">
+              <span className="text-black font-bold text-xl md:text-2xl mb-2">Aquaculture Research Facility</span>
+              <div className="mt-2 text-customGreen2 leading-7 text-sm font-medium">
+                The Aquaculture Research Facility at AGAC pioneers advanced techniques to enhance sustainable food production.
+              </div>
+              <div className="text-customBlackText leading-7 text-sm font-light mt-2">
+                AGAC's Aquaculture Research Facility features modern fish tanks, water quality monitoring systems, and innovative aquaponics setups. Researchers optimize breeding, rearing, and harvesting processes to improve yield and sustainability. This facility enables comprehensive studies on disease resistance and nutritional enhancement of aquatic species. By integrating cutting-edge technology, the facility supports AGAC's mission to ensure global food security through sustainable aquaculture practices.
+              </div>
+            </div>
+          </div>
+        </div>
 
 
-<div className="bg-customGreen flex items-center justify-center font-semibold py-4">
-  <h1 className="text-2xl text-white">Virtual Lab Tours</h1>
-</div>
+        <div className="bg-customGreen flex items-center justify-center font-semibold">
+          <h1 className="text-2xl text-white">Virtual Lab Tours</h1>
+        </div>
+        
 
 <div className="py-10 px-4">
   <div className="text-customBlackText leading-9 text-xl font-bold mb-10 max-w-3xl mx-auto text-center md:text-left">
@@ -348,13 +358,19 @@ function Research() {
           <div className="text-black font-bold text-2xl my-4 p-1">
             <h2> Data Analytics Technique </h2>
           </div>
-          <div className="data-cards"style={{display:"flex"}}>
+          <div
+            className="data-cards"
+            style={{
+              display: "flex",
+              fontSize: "calc(0.8vw + 0.7vh + 0.5vmin)"
+            }}
+          >
             <div
               className="data-cards-1"
-              style={{ height: "320px", width: "280px", overflow: "hidden" }}
+              style={{ height: "22vw", width: "19vw", overflow: "hidden" }}
             >
-              <img src={Res8} alt="" style={{height :"200px",width:"290px"}} />
-              <h2 style={{ padding: "10px"}}>Descriptive Analytics</h2>
+              <img src={Res8} alt="" style={{ height: "200px", width: "290px" }} />
+              <h2 style={{ padding: "10px" }}>Descriptive Analytics</h2>
 
               <p>
                 Summarizes and interprets historical data to understand past
@@ -364,7 +380,7 @@ function Research() {
             </div>
             <div
               className="data-cards-1"
-              style={{ height: "320px", width: "250px", overflow: "hidden" }}
+              style={{ height: "22vw", width: "19vw", overflow: "hidden" }}
             >
               <img src={Res9} alt="" />
               <h2 style={{ padding: "10px" }}>Predictive Analytics</h2>
@@ -377,7 +393,7 @@ function Research() {
             </div>
             <div
               className="data-cards-1"
-              style={{ height: "320px", width: "250px", overflow: "hidden" }}
+              style={{ height: "22vw", width: "19vw", overflow: "hidden" }}
             >
               <img src={Res10} alt="" />
               <h2
