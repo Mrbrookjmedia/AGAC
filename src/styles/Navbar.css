@@ -107,6 +107,7 @@
     right: 20px; /* Position to the extreme right */
     top: 50%;
     transform: translateY(-50%);
+    margin-top: 10px;
 }
 
 /* Media Queries */

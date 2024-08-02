@@ -30,10 +30,10 @@ const Virtual = () => {
         </div>
       </header>
       
-        <div className="gradient-background flex items-center justify-center font-semibold">
-          <h1 className="text-2xl text-white">Advanced Features and Virtual Tools</h1>
-        </div>   
-      
+      <div className="gradient-background flex items-center justify-center font-semibold">
+  <h1 className="text-2xl text-white text-center">Advanced Features and Virtual Tools</h1>
+</div>
+
 
       <section className="py-8">
         <div className="container mx-auto px-4">

@@ -192,35 +192,35 @@ const News = () => {
   <h3 className="text-2xl font-extrabold mb-6">Media Assets</h3>
   <div className="flex flex-col items-center space-y-8">
     {/* Media Kit 1 */}
-    <div className="flex items-center w-full max-w-4xl">
+    <div className="flex flex-col sm:flex-row items-center w-full max-w-4xl">
       <img src={mediakit1} alt="Media Kit 1" className="w-72 h-72 rounded-full object-cover mr-4 border border-black hidden sm:block"/> {/* Hidden on small screens */}
-      <div className="text-left">
-        <p className="text-gray-500 mb-2 text-lg ml-6"> Download high-resolution photos of our latest product launch event and our company logo.</p>
-        <a href="https://www.example.com/media-kit" className="text-green-600 ml-6">Download Links : https://www.example.com/media-kit</a>
+      <div className="text-left sm:ml-6">
+        <p className="text-gray-500 mb-2 text-lg">Download high-resolution photos of our latest product launch event and our company logo.</p>
+        <a href="https://www.example.com/media-kit" className="text-green-600">Download Links : https://www.example.com/media-kit</a>
       </div>
     </div>
     {/* Media Kit 2 */}
-    <div className="flex items-center w-full max-w-4xl">
+    <div className="flex flex-col sm:flex-row items-center w-full max-w-4xl">
       <img src={mediakit2} alt="Media Kit 2" className="w-72 h-72 rounded-full object-cover mr-4 border border-black hidden sm:block"/> {/* Hidden on small screens */}
-      <div className="text-left">
-        <p className="text-gray-500 mb-2 text-lg ml-6">Access our official videos featuring interviews with our CEO, product demos, and footage from our latest campaigns.</p>
-        <a href="https://www.example.com/media-kit" className="text-green-600 ml-6">Download Links : https://www.example.com/media-kit</a>
+      <div className="text-left sm:ml-6">
+        <p className="text-gray-500 mb-2 text-lg">Access our official videos featuring interviews with our CEO, product demos, and footage from our latest campaigns.</p>
+        <a href="https://www.example.com/media-kit" className="text-green-600">Download Links : https://www.example.com/media-kit</a>
       </div>
     </div>
     {/* Media Kit 3 */}
-    <div className="flex items-center w-full max-w-4xl">
+    <div className="flex flex-col sm:flex-row items-center w-full max-w-4xl">
       <img src={mediakit3} alt="Media Kit 3" className="w-72 h-72 rounded-full object-cover mr-4 border border-black hidden sm:block"/> {/* Hidden on small screens */}
-      <div className="text-left">
-        <p className="text-gray-500 mb-2 text-lg ml-8">Download infographics showcasing our impact metrics, timelines of key milestones, and process diagrams.</p>
-        <a href="https://www.example.com/media-kit" className="text-green-600 ml-8">Download Links : https://www.example.com/media-kit</a>
+      <div className="text-left sm:ml-8">
+        <p className="text-gray-500 mb-2 text-lg">Download infographics showcasing our impact metrics, timelines of key milestones, and process diagrams.</p>
+        <a href="https://www.example.com/media-kit" className="text-green-600">Download Links : https://www.example.com/media-kit</a>
       </div>
     </div>
     {/* Media Kit 4 */}
-    <div className="flex items-center w-full max-w-4xl">
+    <div className="flex flex-col sm:flex-row items-center w-full max-w-4xl">
       <img src={mediakit4} alt="Media Kit 4" className="w-72 h-72 rounded-full object-cover mr-4 border border-black hidden sm:block"/> {/* Hidden on small screens */}
-      <div className="text-left">
-        <p className="text-gray-500 mb-2 text-lg ml-6">Download social media graphics and banners featuring our latest campaigns or events.</p>
-        <a href="https://www.example.com/media-kit" className="text-green-600 ml-6">Download Links : https://www.example.com/media-kit</a>
+      <div className="text-left sm:ml-6">
+        <p className="text-gray-500 mb-2 text-lg">Download social media graphics and banners featuring our latest campaigns or events.</p>
+        <a href="https://www.example.com/media-kit" className="text-green-600">Download Links : https://www.example.com/media-kit</a>
       </div>
     </div>
   </div>
