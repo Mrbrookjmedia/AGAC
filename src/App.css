@@ -672,16 +672,15 @@ opacity: 0px;
   flex-direction: column;
   justify-content: center;
 }
-
 .news-articles {
-  padding: 60px 120px;
+  padding: 40px 20px; /* Reduce padding for smaller screens */
   text-align: center;
 }
 
 .news-articles h2 {
   font-family: 'Covered By Your Grace';
   font-weight: 300;
-  font-size: 24px;
+  font-size: 20px; /* Reduce font size for smaller screens */
   color: #F9A825;
   margin-bottom: 10px;
 }
@@ -689,16 +688,18 @@ opacity: 0px;
 .news-articles h1 {
   font-family: 'Manrope', sans-serif;
   font-weight: 800;
+  font-size: 28px; /* Reduce font size for smaller screens */
   color: #333;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .articles-container {
   margin-bottom: 20px;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap; /* Allow wrapping of items for smaller screens */
+  justify-content: center;
   gap: 20px;
-  padding: 0 45px;
+  padding: 0 10px; /* Reduce padding for smaller screens */
 }
 
 .article {
@@ -707,7 +708,7 @@ opacity: 0px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   text-align: left;
-  width: 100%;
+  width: calc(100% - 20px); /* Full width minus gap for mobile */
   max-width: 350px;
 }
 
@@ -744,16 +745,13 @@ opacity: 0px;
 
 .circle {
   width: 100px;
-  /* Adjust size as needed */
   height: 100px;
-  /* Adjust size as needed */
   border-radius: 50%;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  /* Center the circle */
 }
 
 .circle img {
@@ -762,6 +760,49 @@ opacity: 0px;
   object-fit: cover;
 }
 
-.news-articles.button {
+.button {
   margin-top: 30px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #37b81d;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #f6c00f;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (min-width: 768px) {
+  .news-articles {
+    padding: 60px 40px;
+  }
+
+  .articles-container {
+    justify-content: space-between;
+  }
+
+  .article {
+    width: calc(50% - 20px); /* Two articles per row */
+  }
+}
+
+@media (min-width: 1024px) {
+  .news-articles {
+    padding: 60px 120px;
+  }
+
+  .articles-container {
+    justify-content: space-between;
+  }
+
+  .article {
+    width: calc(33.33% - 20px); /* Three articles per row */
+  }
 }
