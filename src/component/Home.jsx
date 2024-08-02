@@ -94,36 +94,78 @@ function Home() {
     </div>
   </div>
 </section>
+<div className="second-block-home py-8 px-4 lg:px-8">
+  <div className="container mx-auto flex flex-col lg:flex-row items-center max-w-screen-lg">
+  <div className="imageContainer relative flex justify-center items-center mb-8 lg:mb-0 lg:mr-8 w-full">
+  <div className="relative">
+    <img
+      src={img6}
+      alt="Fish Tank"
+      className="mainImage w-56 h-56 md:w-72 md:h-72 lg:w-96 lg:h-96 rounded-full border-4 border-white shadow-md"
+    />
+    <img
+      src={img7}
+      alt="Plants"
+      className="subImage absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 w-20 h-20 md:w-32 md:h-32 lg:w-48 lg:h-48 rounded-full border-4 border-white shadow-md"
+    />
+  </div>
+</div>
 
-<div className="second-block-home py-8">
-  <div className="container mx-auto flex flex-col lg:flex-row items-center">
-    <div className="imageContainer relative flex-shrink-0 mb-8 lg:mb-0 lg:mr-8">
-      <img src={img6} alt="Fish Tank" className="mainImage w-72 h-72 lg:w-96 lg:h-96 rounded-full border-4 border-white shadow-md" />
-      <img src={img7} alt="Plants" className="subImage absolute bottom-0  left-1/6 transform -translate-x-1/2 w-32 h-32 lg:w-48 lg:h-48 rounded-full border-5 border-white shadow-md" />
-    </div>
-    <div className="textContainer text-center lg:text-left">
-      <p className="introductions text-orange-500 text-xl font-semibold">Our Introductions</p>
-      <h1 className="title text-2xl lg:text-4xl font-bold mt-2">AquaGenetics AI Labs</h1>
-      <p className="subtitle text-lg mt-2">Our fish tanks and biofilters work in harmony to provide nutrient-rich water for the plants</p>
-      <p className="description mt-4 text-gray-600">It represents a holistic approach to food production, combining the best aspects of aquaculture and hydroponics. This system leverages the natural biological processes of fish and plants to create a closed-loop, efficient, and environmentally friendly method of food production.</p>
+    <div className="textContainer text-center lg:text-left px-4 lg:px-0">
+      <p className="introductions text-orange-500 text-lg md:text-xl font-semibold">
+        Our Introductions
+      </p>
+      <h1 className="title text-2xl md:text-3xl lg:text-4xl font-bold mt-2">
+        AquaGenetics AI Labs
+      </h1>
+      <p className="subtitle text-base md:text-lg mt-2">
+        Our fish tanks and biofilters work in harmony to provide nutrient-rich
+        water for the plants
+      </p>
+      <p className="description mt-4 text-gray-600 text-sm md:text-base max-w-full lg:max-w-md">
+        It represents a holistic approach to food production, combining the best
+        aspects of aquaculture and hydroponics. This system leverages the
+        natural biological processes of fish and plants to create a closed-loop,
+        efficient, and environmentally friendly method of food production.
+      </p>
       <div className="features flex flex-col lg:flex-row justify-center lg:justify-start gap-4 mt-4">
         <div className="featureItem flex items-center gap-2">
-          <img src={img8} alt="Chemical Free" className="featureIcon w-12 h-12" />
-          <p>Chemical free vegetables</p>
+          <img
+            src={img8}
+            alt="Chemical Free"
+            className="featureIcon w-10 h-10 md:w-12 md:h-12"
+          />
+          <p className="text-sm md:text-base">Chemical free vegetables</p>
         </div>
         <div className="featureItem flex items-center gap-2">
-          <img src={img9} alt="Genomic Research" className="featureIcon w-12 h-12" />
-          <p>Genomic Research</p>
+          <img
+            src={img9}
+            alt="Genomic Research"
+            className="featureIcon w-10 h-10 md:w-12 md:h-12"
+          />
+          <p className="text-sm md:text-base">Genomic Research</p>
         </div>
       </div>
-      <ul className="list list-disc list-inside mt-4 text-gray-600">
-        <li><span className="text-green-500">&#x2705;</span> Our technology is not just random innovation. It’s based on years of scientific research and real-world applications.</li>
-        <li><span className="text-green-500">&#x2705;</span> As pioneers in this field, we are the first to bring such a comprehensive and integrated approach to food production on the internet.</li>
+      <ul className="list list-disc list-inside mt-4 text-gray-600 text-sm md:text-base">
+        <li>
+          <span className="text-green-500">&#x2705;</span> Our technology is
+          not just random innovation. It’s based on years of scientific research
+          and real-world applications.
+        </li>
+        <li>
+          <span className="text-green-500">&#x2705;</span> As pioneers in this
+          field, we are the first to bring such a comprehensive and integrated
+          approach to food production on the internet.
+        </li>
       </ul>
-      <button className="button mt-4 bg-green-600 text-white py-2 px-6 rounded hover:bg-green-700">Discover More</button>
+      <button className="button mt-4 bg-green-600 text-white py-2 px-6 rounded hover:bg-green-700">
+        Discover More
+      </button>
     </div>
   </div>
 </div>
+
+
 
 <div className="features-section py-8">
   <div className="container mx-auto text-center">
@@ -279,7 +321,7 @@ function Home() {
         <button className="button">Read More Articles</button>
       </section>
     </>
-  );
+  ); 
 }
 
 export default Home;
