@@ -75,93 +75,90 @@ function Home() {
         </div>
       </section>
       
-      <section className="features py-8">
-  <div className="features-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
-    <div className="feature bg-white p-4 rounded-lg shadow-md text-center">
-      <div className="faci text-yellow-400 mb-2">Facility-1</div>
-      <h3 className="text-xl font-semibold">Sustainable Practices</h3>
-      <img src={img3} alt="Sustainable Practices" className="mt-2 mx-auto w-24 h-24 object-cover" />
-    </div>
-    <div className="feature bg-white p-4 rounded-lg shadow-md text-center">
-      <div className="faci text-yellow-400 mb-2">Facility-2</div>
-      <h3 className="text-xl font-semibold">Automated Monitoring System</h3>
-      <img src={img4} alt="Automated Monitoring System" className="mt-2 mx-auto w-24 h-24 object-cover" />
-    </div>
-    <div className="feature bg-white p-4 rounded-lg shadow-md text-center">
-      <div className="faci text-yellow-400 mb-2">Facility-3</div>
-      <h3 className="text-xl font-semibold">Data Analytics and Visualization</h3>
-      <img src={img5} alt="Data Analytics and Visualization" className="mt-2 mx-auto w-24 h-24 object-cover" />
-    </div>
-  </div>
-</section>
-
-<div className="second-block-home py-8">
-  <div className="container mx-auto flex flex-col lg:flex-row items-center">
-    <div className="imageContainer relative flex-shrink-0 mb-8 lg:mb-0 lg:mr-8">
-      <img src={img6} alt="Fish Tank" className="mainImage w-72 h-72 lg:w-96 lg:h-96 rounded-full border-4 border-white shadow-md" />
-      <img src={img7} alt="Plants" className="subImage absolute bottom-0  left-1/6 transform -translate-x-1/2 w-32 h-32 lg:w-48 lg:h-48 rounded-full border-5 border-white shadow-md" />
-    </div>
-    <div className="textContainer text-center lg:text-left">
-      <p className="introductions text-orange-500 text-xl font-semibold">Our Introductions</p>
-      <h1 className="title text-2xl lg:text-4xl font-bold mt-2">AquaGenetics AI Labs</h1>
-      <p className="subtitle text-lg mt-2">Our fish tanks and biofilters work in harmony to provide nutrient-rich water for the plants</p>
-      <p className="description mt-4 text-gray-600">It represents a holistic approach to food production, combining the best aspects of aquaculture and hydroponics. This system leverages the natural biological processes of fish and plants to create a closed-loop, efficient, and environmentally friendly method of food production.</p>
-      <div className="features flex flex-col lg:flex-row justify-center lg:justify-start gap-4 mt-4">
-        <div className="featureItem flex items-center gap-2">
-          <img src={img8} alt="Chemical Free" className="featureIcon w-12 h-12" />
-          <p>Chemical free vegetables</p>
+      <section className="features">
+        <div className="features-grid">
+          <div className="feature">
+            <div className="faci">Facility-1</div>
+            <h3>Sustainable Practices</h3>
+            <img src={img3} alt="Sustainable Practices" />
+          </div>
+          <div className="feature">
+            <div className="faci">Facility-2</div>
+            <h3>Automated Monitoring System</h3>
+            <img src={img4} alt="Automated Monitoring System" />
+          </div>
+          <div className="feature">
+            <div className="faci">Facility-3</div>
+            <h3>Data Analytics and Visualization</h3>
+            <img src={img5} alt="Data Analytics and Visualization" />
+          </div>
         </div>
-        <div className="featureItem flex items-center gap-2">
-          <img src={img9} alt="Genomic Research" className="featureIcon w-12 h-12" />
-          <p>Genomic Research</p>
+      </section>
+
+      <div className="second-block-home">
+        <div className="container">
+          <div className="imageContainer">
+            <img src={img6} alt="Fish Tank" className="mainImage" />
+            <img src={img7} alt="Plants" className="subImage" />
+          </div>
+          <div className="textContainer">
+            <p className="introductions">Our Introductions</p>
+            <h1 className="title"> AquaGenetics AI Labs</h1>
+            <p className="subtitle">
+              Our fish tanks and biofilters work in harmony to provide
+              nutrient-rich water for the plants
+            </p>
+            <p className="description">
+              It represents a holistic approach to food production, combining
+              the best aspects of aquaculture and hydroponics. This system
+              leverages the natural biological processes of fish and plants to
+              create a closed-loop, efficient, and environmentally friendly
+              method of food production.
+            </p>
+            <div className="features">
+              <div className="featureItem">
+                <img src={img8} alt="Chemical Free" className="featureIcon" />
+                <p>Chemical free vegetables</p>
+              </div>
+              <div className="featureItem">
+                <img src={img9} alt="Genomic Research" className="featureIcon" />
+                <p>Genomic Research</p>
+              </div>
+            </div>
+            <ul className="list">
+              <li> <span class="green-tick">&#x2705;</span>Our technology is not just random innovation. It’s based on years of scientific research and real-world applications.</li>
+              <li> <span class="green-tick">&#x2705;</span>As pioneers in this field, we are the first to bring such a comprehensive and integrated approach to food production on the internet.</li>
+            </ul>
+            <button className="button">Discover More</button>
+          </div>
         </div>
       </div>
-      <ul className="list list-disc list-inside mt-4 text-gray-600">
-        <li><span className="text-green-500">&#x2705;</span> Our technology is not just random innovation. It’s based on years of scientific research and real-world applications.</li>
-        <li><span className="text-green-500">&#x2705;</span> As pioneers in this field, we are the first to bring such a comprehensive and integrated approach to food production on the internet.</li>
-      </ul>
-      <button className="button mt-4 bg-green-600 text-white py-2 px-6 rounded hover:bg-green-700">Discover More</button>
-    </div>
-  </div>
-</div>
-
-<div className="features-section py-8">
-  <div className="container mx-auto text-center">
-    <h2 className="text-4xl font-bold mb-4">Our Features</h2>
-    <h3 className="text-xl font-semibold mb-6">Key technologies</h3>
-    <div className="tech-cards py-8">
-  <div className="container mx-auto px-4">
-    <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-6">
-      <div className="card bg-white p-6 rounded-lg shadow-md text-center flex flex-col items-center w-full max-w-xs">
-        <img src={img10} alt="Soilless farming" className="w-full h-40 object-cover mb-4" />
-        <h4 className="text-xl font-semibold mb-2">Soilless Farming</h4>
-        <button className="bg-blue-500 text-white py-2 px-6 rounded hover:bg-blue-600">Read More</button>
-      </div>
-      <div className="card bg-white p-6 rounded-lg shadow-md text-center flex flex-col items-center w-full max-w-xs">
-        <img src={img11} alt="Deep Water Culture" className="w-full h-40 object-cover mb-4" />
-        <h4 className="text-xl font-semibold mb-2">Deep Water Culture</h4>
-        <button className="bg-blue-500 text-white py-2 px-6 rounded hover:bg-blue-600">Read More</button>
-      </div>
-      <div className="card bg-white p-6 rounded-lg shadow-md text-center flex flex-col items-center w-full max-w-xs">
-        <img src={img12} alt="Year-Round Production" className="w-full h-40 object-cover mb-4" />
-        <h4 className="text-xl font-semibold mb-2">Year-Round Production</h4>
-        <button className="bg-blue-500 text-white py-2 px-6 rounded hover:bg-blue-600">Read More</button>
-      </div>
-      <div className="card bg-white p-6 rounded-lg shadow-md text-center flex flex-col items-center w-full max-w-xs">
-        <img src={img13} alt="Genomics Integration" className="w-full h-40 object-cover mb-4" />
-        <h4 className="text-xl font-semibold mb-2">Genomics Integration</h4>
-        <button className="bg-blue-500 text-white py-2 px-6 rounded hover:bg-blue-600">Read More</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-</div>
-
-  
-
-
-
+      
+      <div className="features-section">
+        <h2>Our Features</h2>
+        <h3>Key technologies</h3>
+        <div className="tech-cards">
+          <div className="card">
+            <img src={img10} alt="Soilless farming" />
+            <h4>Soilless farming</h4>
+            <button>Read More</button>
+          </div>
+          <div className="card">
+            <img src={img11} alt="Deep Water Culture" />
+            <h4>Deep Water Culture</h4>
+            <button>Read More</button>
+          </div>
+          <div className="card">
+            <img src={img12} alt="Year-Round Production" />
+            <h4>Year-Round Production</h4>
+            <button>Read More</button>
+          </div>
+          <div className="card">
+            <img src={img13} alt="Genomics Integration" />
+            <h4>Genomics Integration</h4>
+            <button>Read More</button>
+          </div>
+        </div>
         <div className="footer-l">
           <button>Aquaponics</button>
           <button>Ongoing Projects</button>
