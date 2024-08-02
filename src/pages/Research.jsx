@@ -61,9 +61,10 @@ function Research() {
             {/* Content Container */}
             <div className="flex flex-col items-center md:items-start text-center md:text-left flex-1">
               {/* Title */}
-              <span className="bg-green-500 text-white font-medium my-2 p-2 rounded w-40 md:w-48 text-center">
+              <span className="bg-green-500 text-white font-medium my-2 p-2 rounded w-60 md:w-60 text-center">
                 Genetic Disease Treatment
               </span>
+
 
               {/* Text Content */}
               <div className="mt-2 text-customBlackText leading-7">
@@ -115,7 +116,7 @@ function Research() {
             {/* Content Container */}
             <div className="flex flex-col items-center md:items-start text-center md:text-left flex-1">
               {/* Title */}
-              <span className="bg-green-500 text-white font-medium my-2 p-2 rounded w-40 md:w-48 text-center">
+              <span className="bg-green-500 text-white font-medium my-2 p-2 rounded w-60 md:w-60 text-center">
                 Aquaculture Techniques
               </span>
 
