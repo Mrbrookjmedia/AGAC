@@ -235,7 +235,7 @@ function About() {
         <div class="team-members">
           <div class="member">
             <h3>Dr. Jane Doe, CEO</h3>
-
+            <hr/>
             <p>
               Dr. Doe is a renowned expert in genetics and AI, with over 20
               years of experience in the field. Her leadership and vision have
@@ -250,7 +250,7 @@ function About() {
           </div>
           <div class="member">
             <h3>John Smith, CTO</h3>
-
+            <hr/>
             <p>
               John Smith is a leader in AI technology development and
               implementation. His expertise in creating scalable AI solutions
@@ -264,7 +264,7 @@ function About() {
           </div>
           <div class="member">
             <h3>Emily White, Head of Research</h3>
-
+            <hr/>
             <p>
               Emily White is a distinguished scientist in aquaculture and
               genetic research. Her pioneering work has significantly
