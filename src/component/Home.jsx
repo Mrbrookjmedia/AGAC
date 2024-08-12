@@ -58,23 +58,23 @@ function Home() {
   return (
     <>
       <section className="hero">
-        <div className="hero-content">
-          WELCOME TO OUR STATE-OF-THE-ART AQUAPONICS FACILITY
-          <img src={img1} alt="" />
-        </div>
-        <div className="hero-image">
-          <img src={img2} alt="Image" />
-        </div>
-        <div className="header-cul">
-          <h2>Cultivating a greener Future.</h2>
-        </div>
-        <div className="disbut">
-          <Link to="/services">
-            <button>Discover More</button>
-          </Link>
-        </div>
-      </section>
-      
+  <div className="hero-content">
+    WELCOME TO OUR STATE-OF-THE-ART AQUAPONICS FACILITY
+    <img src={img1} alt="" />
+  </div>
+  <div className="hero-image">
+    <img src={img2} alt="Image" />
+  </div>
+  <div className="header-cul">
+    <h2>Cultivating a greener Future.</h2>
+  </div>
+  <div className="disbut">
+    <Link to="/services">
+      <button>Discover More</button>
+    </Link>
+  </div>
+</section>
+
       <section className="features">
         <div className="features-grid">
           <div className="feature">
@@ -238,9 +238,10 @@ function Home() {
             There are variation You need to be sure there is anything hidden in
             the middle of text.
           </div>
-          <button className="button">Discover More</button>
+          <button className="button discover-more">Discover More</button>
         </div>
       </div>
+      
 
       <SuccessStories />
 
