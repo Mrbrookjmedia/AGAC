@@ -1,7 +1,32 @@
+
+
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import video from "../../images/video.mp4";
 import SuccessStories from "./SuccessStories";
+
+// Import images
+import h1Img from "../../images/h1-img.png";
+import home1 from "../../images/Home1.png";
+import home2 from "../../images/home2.png";
+import home3 from "../../images/home3.png";
+import home4 from "../../images/home4.png";
+import home5 from "../../images/home5.png";
+import home6 from "../../images/home6.png";
+import vegetableInBasketIcon from "../../images/VegetableInBasketIcon.svg";
+import researchIcon from "../../images/ResearchIcon.svg";
+import home15 from "../../images/home15.png";
+import home16 from "../../images/home16.png";
+import home17 from "../../images/home17.png";
+import home18 from "../../images/home18.png";
+import home11 from "../../images/home11.png";
+import home12 from "../../images/home12.png";
+import home13 from "../../images/home13.png";
+import home14 from "../../images/home14.png";
+import home19 from "../../images/home19.png";
+import home20 from "../../images/home20.png";
+import home21 from "../../images/home21.png";
+import home22 from "../../images/home22.png";
 
 const VideoComponent = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -39,10 +64,10 @@ function Home() {
       <section className="hero">
         <div className="hero-content">
           WELCOME TO OUR STATE-OF-THE-ART AQUAPONICS FACILITY
-          <img src="./images/h1-img.png" alt="" />
+          <img src={h1Img} alt="" />
         </div>
         <div className="hero-image">
-          <img src="./images/Home1.png" alt="Image" />
+          <img src={home1} alt="Image" />
         </div>
         <div className="header-cul">
           <h2>Cultivating a greener Future.</h2>
@@ -59,17 +84,17 @@ function Home() {
           <div className="feature">
             <div className="faci">Facility-1</div>
             <h3>Sustainable Practices</h3>
-            <img src="./images/home2.png" alt="Sustainable Practices" />
+            <img src={home2} alt="Sustainable Practices" />
           </div>
           <div className="feature">
             <div className="faci">Facility-2</div>
             <h3>Automated Monitoring System</h3>
-            <img src="./images/home3.png" alt="Automated Monitoring System" />
+            <img src={home3} alt="Automated Monitoring System" />
           </div>
           <div className="feature">
             <div className="faci">Facility-3</div>
             <h3>Data Analytics and Visualization</h3>
-            <img src="./images/home4.png" alt="Data Analytics and Visualization" />
+            <img src={home4} alt="Data Analytics and Visualization" />
           </div>
         </div>
       </section>
@@ -77,8 +102,8 @@ function Home() {
       <div className="second-block-home">
         <div className="container">
           <div className="imageContainer">
-            <img src="./images/home5.png" alt="Fish Tank" className="mainImage" />
-            <img src="./images/home6.png" alt="Plants" className="subImage" />
+            <img src={home5} alt="Fish Tank" className="mainImage" />
+            <img src={home6} alt="Plants" className="subImage" />
           </div>
           <div className="textContainer">
             <p className="introductions">Our Introductions</p>
@@ -96,11 +121,11 @@ function Home() {
             </p>
             <div className="features">
               <div className="featureItem">
-                <img src="./images/VegetableInBasketIcon.svg" alt="Chemical Free" className="featureIcon" />
+                <img src={vegetableInBasketIcon} alt="Chemical Free" className="featureIcon" />
                 <p>Chemical free vegetables</p>
               </div>
               <div className="featureItem">
-                <img src="./images/ResearchIcon.svg" alt="Genomic Research" className="featureIcon" />
+                <img src={researchIcon} alt="Genomic Research" className="featureIcon" />
                 <p>Genomic Research</p>
               </div>
             </div>
@@ -118,22 +143,22 @@ function Home() {
         <h3>Key technologies</h3>
         <div className="tech-cards">
           <div className="card">
-            <img src="./images/home15.png" alt="Soilless farming" />
+            <img src={home15} alt="Soilless farming" />
             <h4>Soilless farming</h4>
             <button>Read More</button>
           </div>
           <div className="card">
-            <img src="./images/home16.png" alt="Deep Water Culture" />
+            <img src={home16} alt="Deep Water Culture" />
             <h4>Deep Water Culture</h4>
             <button>Read More</button>
           </div>
           <div className="card">
-            <img src="./images/home17.png" alt="Year-Round Production" />
+            <img src={home17} alt="Year-Round Production" />
             <h4>Year-Round Production</h4>
             <button>Read More</button>
           </div>
           <div className="card">
-            <img src="./images/home18.png" alt="Genomics Integration" />
+            <img src={home18} alt="Genomics Integration" />
             <h4>Genomics Integration</h4>
             <button>Read More</button>
           </div>
@@ -153,25 +178,25 @@ function Home() {
           <VideoComponent />
           <div className="img-4">
             <div className="img1">
-              <img src="./images/home11.png" alt="" />
+              <img src={home11} alt="" />
               <div className="imgtext">
                 <h4>Grow Bed and Plant System</h4>
               </div>
             </div>
             <div className="img2">
-              <img src="./images/home12.png" alt="" />
+              <img src={home12} alt="" />
               <div className="imgtext">
                 <h4>Harvesting and Processing Area</h4>
               </div>
             </div>
             <div className="img2">
-              <img src="./images/home13.png" alt="" />
+              <img src={home13} alt="" />
               <div className="imgtext">
                 <h4>Automated Monitoring System</h4>
               </div>
             </div>
             <div className="img2">
-              <img src="./images/home14.png" alt="" />
+              <img src={home14} alt="" />
               <div className="imgtext">
                 <h4>Fish Tanks and Biofilters</h4>
               </div>
@@ -191,7 +216,7 @@ function Home() {
           >
             Fish Tanks and Biofilters
           </span>
-          <img src="./images/home19.png" alt="" />
+          <img src={home19} alt="" />
         </div>
         <div className="five-text">
           <div className="title-5">
@@ -207,7 +232,9 @@ function Home() {
             There are variation You need to be sure there is anything hidden in
             the middle of text.
           </div>
-          <div className="five-h4"><span class="green-tick">&#x2705;</span>Sustainable food production.</div>
+          <div className="five-h4"><span class="
+
+green-tick">&#x2705;</span>Sustainable food production.</div>
           <div className="five-p">
             There are variation You need to be sure there is anything hidden in
             the middle of text.
@@ -228,7 +255,7 @@ function Home() {
         <h1>News & Articles</h1>
         <div className="articles-container">
           <div className="article">
-            <img src="./images/home20.png" alt="Sustainable farming" />
+            <img src={home20} alt="Sustainable farming" />
             <div className="article-content">
               <div className="article-date">05 July 2022</div>
               <div className="article-author">By Ron Martin</div>
@@ -236,7 +263,7 @@ function Home() {
             </div>
           </div>
           <div className="article">
-            <img src="./images/home21.png" alt="Advanced technologies" />
+            <img src={home21} alt="Advanced technologies" />
             <div className="article-content">
               <div className="article-date">19 June 2022</div>
               <div className="article-author">By Jane Doe</div>
@@ -244,7 +271,7 @@ function Home() {
             </div>
           </div>
           <div className="article">
-            <img src="./images/home22.png" alt="Year-round production" />
+            <img src={home22} alt="Year-round production" />
             <div className="article-content">
               <div className="article-date">10 May 2022</div>
               <div className="article-author">By John Smith</div>
