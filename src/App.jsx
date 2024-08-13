@@ -11,6 +11,7 @@ import Collaborations from './pages/Collaborations';
 import Contact from './pages/Contact';
 import Virtual from './pages/Virtual';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'; // Import Link for navigation
+import Login from './pages/Login';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
               <Route path="/collaborations" element={<Collaborations />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/virtual" element={<Virtual />} />
+              <Route path="/login" element={<Login />} />
 
             </Routes>
 
